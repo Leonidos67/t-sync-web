@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>T-Sync.</title>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/normalize.css">
+
+</head>
+<body>
+    
+    <!-- Градиентные определения для SVG -->
+    <svg width="0" height="0" style="position: absolute;">
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#00ccff;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#00ff88;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#00ccff;stop-opacity:1" />
+            </linearGradient>
+            <filter id="gradient-filter">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="0"/>
+            </filter>
+        </defs>
+    </svg>
+
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <a href="/">T-Sync.</a>
+            </div>
+        </div>
+        <div class="header-center">
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle">
+                            <span data-translate="nav-services">Наши сервисы</span>
+                            <img src="./assets/icons/arrow.png" class="dropdown-icon" alt="▼">
+                        </a>
+                        <div class="dropdown-menu-wrapper">
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="/" class="active">
+                                        <div class="menu-item-title" data-translate="nav-platform-title">T-Sync Platform</div>
+                                        <div class="menu-item-description" data-translate="nav-platform-desc">Платформа для управления тренировками</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./products/create-website/">
+                                        <div class="menu-item-title" data-translate="nav-creatium-title">T-Sync Creatium</div>
+                                        <div class="menu-item-description" data-translate="nav-creatium-desc">Создание персонального сайта</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./products/tsygram/">
+                                        <div class="menu-item-title" data-translate="nav-tsygram-title">Tsygram</div>
+                                        <div class="menu-item-description" data-translate="nav-tsygram-desc">Социальная сеть для спортсменов</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Мобильные сервисы в горизонтальном скролле -->
+                    <li class="mobile-services-scroller">
+                        <div class="services-scroll">
+                            <a href="/" class="service-card active">
+                                <div class="menu-item-title" data-translate="nav-platform-title">T-Sync Platform</div>
+                                <div class="menu-item-description" data-translate="nav-platform-desc">Платформа для управления тренировками</div>
+                            </a>
+                            <a href="./products/create-website/" class="service-card">
+                                <div class="menu-item-title" data-translate="nav-creatium-title">T-Sync Creatium</div>
+                                <div class="menu-item-description" data-translate="nav-creatium-desc">Создание персонального сайта</div>
+                            </a>
+                            <a href="./products/tsygram/" class="service-card">
+                                <div class="menu-item-title" data-translate="nav-tsygram-title">Tsygram</div>
+                                <div class="menu-item-description" data-translate="nav-tsygram-desc">Социальная сеть для спортсменов</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="/price/" data-translate="nav-pricing">Тарифы</a></li>
+                    <li><a href="/roadmap/" data-translate="nav-roadmap">Роудмап</a></li>
+                    <li><a href="/ai/" data-translate="nav-ai">Ai</a></li>
+                    <!-- <li><a href="/help/" data-translate="nav-help">Справочный центр</a></li> -->
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <a href="/ai/">
+                <svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12,0c-0.257,6.518 -5.482,11.743 -12,12c6.518,0.257 11.743,5.482 12,12c0.257,-6.518 5.482,-11.743 12,-12c-6.518,-0.257 -11.743,-5.482 -12,-12zM12,17.163c-1.257,-2.124 -3.039,-3.906 -5.163,-5.163c2.124,-1.257 3.906,-3.039 5.163,-5.163c1.257,2.124 3.039,3.906 5.163,5.163c-2.124,1.257 -3.906,3.039 -5.163,5.163z"></path></g></g>
+                </svg>
+            </a>
+            <div class="language-dropdown" style="margin-right: 10px; position: relative;">
+                <a href="#" id="language-toggle" class="language-toggle-btn">
+                    <span id="current-lang" class="current-lang-text">EN</span>
+                </a>
+                <div class="language-menu" id="language-menu">
+                    <button class="lang-btn" data-lang="RU">
+                        <span class="check-left">✓</span>
+                        Русский
+                        <span class="check-right">✓</span>
+                    </button>
+                    <button class="lang-btn active" data-lang="EN">
+                        <span class="check-left">✓</span>
+                        English
+                        <span class="check-right">✓</span>
+                    </button>
+                </div>
+            </div>
+            <a href="#" class="header-button error-button" data-translate="nav-login">Войти</a>
+            <button class="mobile-menu-toggle" aria-label="Открыть меню">
+                <img src="./assets/icons/menu.png" alt="Меню" class="menu-icon">
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-balls">
+            <div class="ball ball-1"></div>
+            <div class="ball ball-2"></div>
+            <div class="ball ball-3"></div>
+            <div class="ball ball-4"></div>
+            <div class="ball ball-5"></div>
+            <div class="ball ball-6"></div>
+            <div class="ball ball-7"></div>
+            <div class="ball ball-8"></div>
+            <div class="ball ball-9"></div>
+            <div class="ball ball-10"></div>
+            <div class="ball ball-11"></div>
+            <div class="ball ball-12"></div>
+            <div class="ball ball-13"></div>
+            <div class="ball ball-14"></div>
+            <div class="ball ball-15"></div>
+            <div class="ball ball-16"></div>
+            <div class="ball ball-17"></div>
+            <div class="ball ball-18"></div>
+            <div class="ball ball-19"></div>
+            <div class="ball ball-20"></div>
+            <div class="ball ball-21"></div>
+            <div class="ball ball-22"></div>
+            <div class="ball ball-23"></div>
+            <div class="ball ball-24"></div>
+            <div class="ball ball-25"></div>
+            <div class="ball ball-26"></div>
+            <div class="ball ball-27"></div>
+            <div class="ball ball-28"></div>
+            <div class="ball ball-29"></div>
+            <div class="ball ball-30"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="launch-date">
+                <span class="pulsating-dot"></span>
+                <div class="launch-text" data-translate="launch-date">Запуск платформы: 01.10.2025</div>
+            </div>
+            <h1 class="hero-title">
+                <div class="title-line"><span data-translate="hero-title-line1">Платформа для</span> <span class="highlight-word" data-translate="hero-title-sport1">спортсменов</span>,</div>
+                <div class="title-line"><span data-translate="hero-title-line2">созданная</span> <span class="highlight-word" data-translate="hero-title-sport2">спортсменами</span></div>
+            </h1>
+            <p class="hero-text" data-translate="hero-text">
+                🤝 Создание тренировочного процесса, слежение за аналитикой и синхронизиация команды. Все это - в одном месте. b2b-платформа для ведения тренировок.
+            </p>
+            <a href="#" class="hero-button error-button" data-translate="hero-button">Создать beta-аккаунт</a>
+        </div>
+        <div class="scroll-hint">Scroll</div>
+    </section>
+
+    <section class="home-pricing-section">
+        <div class="home-pricing-container">
+            <h1 data-translate="stats-title">О нас в цифрах</h1>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value">99.99%</div>
+                    <div class="stat-label" data-translate="stats-uptime">Всегда на связи и без сбоев, всегда надежен.</div>
+                </div>
+                <div class="stat-item">
+                    <!-- <div class="stat-value">1k+</div> -->
+                    <div class="stat-value">0</div>
+                    <div class="stat-label" data-translate="stats-users">Активных пользователей в системе.</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">24/7</div>
+                    <div class="stat-label" data-translate="stats-support">Настоящие люди/Ии-ассистент - всегда готовы помочь.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="benefits-section">
+        <div class="benefits-wrapper">
+            <h1 data-translate="benefits-title">Наши преимущества</h1>
+        </div>
+        <div class="benefits-container">
+            <div class="benefit-item">
+                <div class="benefit-icon">🚀</div>
+                <h3 data-translate="benefit-access-title">Гибкие настройки доступа</h3>
+                <p data-translate="benefit-access-desc">Настраивайте права доступа для ассистентов, спортсменов или вторых тренеров за 2 клика.</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">💡</div>
+                <h3 data-translate="benefit-crossplatform-title">Кроссплатформенная доступность</h3>
+                <p data-translate="benefit-crossplatform-desc">Начните на компьютере, продолжите на телефоне — все синхронизируется мгновенно.</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">🛡️</div>
+                <h3 data-translate="benefit-unified-title">Единое пространство для тренировок</h3>
+                <p data-translate="benefit-unified-desc">Все инструменты в одном месте: от планирования до видеоразборов.</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">📈</div>
+                <h3 data-translate="benefit-automation-title">Полная автоматизация процессов</h3>
+                <p data-translate="benefit-automation-desc">Система сама считает нагрузки, напоминает о тренировках и формирует отчеты.</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">🌐</div>
+                <h3 data-translate="benefit-integration-title">Интеграция с внешними сервисами</h3>
+                <p data-translate="benefit-integration-desc">Подключение Garmin Connect, Slack и других платформ для полной автоматизации.</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon">🤝</div>
+                <h3 data-translate="benefit-analytics-title">Детальная аналитика и отчеты</h3>
+                <p data-translate="benefit-analytics-desc">Прогресс в виде понятных графиков, статистика нагрузок и детальные отчеты по тренировкам.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="network-section">
+        <div class="container" id="network">
+            <!-- Фон сетки -->
+            <div class="grid"></div>
+            
+            <!-- SVG для линий -->
+            <svg class="network-svg" width="100%" height="100%"></svg>
+            
+            <!-- Центральная иконка -->
+            <div class="center-icon" data-translate="network-center">
+                вы
+            </div>
+
+            <!-- Карточки узлов -->
+            <div class="node" style="top: 15%; left: 20%;"><span data-translate="network-garmin-title">Garmin Connect</span><br><small data-translate="network-garmin-desc">Подключите свой аккаунт, <br/>и отслеживайте активность</small></div>
+            <div class="node" style="top: 40%; left: 10%;"><span data-translate="network-slack-title">Slack-уведомления</span><br><small data-translate="network-slack-desc">Получайте уведомления в своем <br/>рабочем пространстве Slack</small></div>
+            <div class="node" style="top: 65%; left: 25%;"><span data-translate="network-privacy-title">Персональная Конфиденциальность</span><br><small data-translate="network-privacy-desc">Управляйте безопасностью и доступом к своему аккаунту</small></div>
+            <div class="node" style="top: 20%; right: 20%;"><span data-translate="network-roles-title">Ролевой доступ</span><br><small data-translate="network-roles-desc">Задавайте роли всем участникам зоны</small></div>
+            <div class="node" style="top: 50%; right: 10%;"><span data-translate="network-export-title">Экспорт данных</span><br><small data-translate="network-export-desc">Переносите созданные тренировки в удобный для вас формат</small></div>
+            <div class="node" style="bottom: 15%; right: 25%;"><span data-translate="network-other-title">Другие возможности</span><br><small data-translate="network-other-desc">Создайте свой персональный сайт и страницу в tsygram</small></div>
+        </div>
+    </section>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">T-Sync.</a>
+                    <!-- <p class="footer-tagline">Платформа для тренировок и командной синхронизации.</p> -->
+                </div>
+                <div class="footer-columns">
+                    <div class="footer-col">
+                        <div class="footer-col-title" data-translate="footer-products">Продукты</div>
+                        <ul>
+                            <li><a href="/">T‑Sync Platform</a></li>
+                            <li><a href="/products/create-website/">T‑Sync Creatium</a></li>
+                            <li><a href="/products/tsygram/">Tsygram</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col-title" data-translate="footer-resources">Ресурсы</div>
+                        <ul>
+                            <li><a href="/price/" data-translate="nav-pricing">Тарифы</a></li>
+                            <li><a href="/roadmap/" data-translate="nav-roadmap">Роудмап</a></li>
+                            <li><a href="/ai/" data-translate="footer-ai-assistant">AI‑ассистент</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col-title" data-translate="footer-more">Еще</div>
+                        <ul>
+                            <!-- <li><a href="/help/" data-translate="nav-help">Справочный центр</a></li> -->
+                            <li><a href="/privacy/" data-translate="footer-privacy">Политика Конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <span data-translate="footer-copyright">© 2025 T‑Sync</span>
+                    <span class="dot-sep">•</span>
+                    <a href="/privacy/" data-translate="footer-privacy">Политика Конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Вверх" -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Прокрутить вверх"></button>
+
+    <script src="./src/js/translations.js"></script>
+    <script src="./src/js/script.js"></script>
+<script>
+    // Мягкая белая подсветка под курсором для .stat-item и .benefit-item
+    document.addEventListener('DOMContentLoaded', function() {
+        const hoverGlowItems = document.querySelectorAll('.stat-item, .benefit-item');
+        hoverGlowItems.forEach(function(item) {
+            item.addEventListener('mousemove', function(e) {
+                const rect = item.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                item.style.setProperty('--x', x + 'px');
+                item.style.setProperty('--y', y + 'px');
+            });
+            item.addEventListener('mouseleave', function() {
+                item.style.removeProperty('--x');
+                item.style.removeProperty('--y');
+            });
+            // touch поддержка (на всякий случай)
+            item.addEventListener('touchmove', function(e) {
+                if (e.touches && e.touches.length > 0) {
+                    const t = e.touches[0];
+                    const rect = item.getBoundingClientRect();
+                    const x = t.clientX - rect.left;
+                    const y = t.clientY - rect.top;
+                    item.style.setProperty('--x', x + 'px');
+                    item.style.setProperty('--y', y + 'px');
+                }
+            }, { passive: true });
+            item.addEventListener('touchend', function() {
+                item.style.removeProperty('--x');
+                item.style.removeProperty('--y');
+            });
+        });
+
+
+    });
+</script>
+</body>
+</html>

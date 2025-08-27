@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="pricing-page-title">Цены – T‑Sync</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../src/css/normalize.css">
+
+</head>
+<body>
+    
+    <!-- Градиентные определения для SVG -->
+    <svg width="0" height="0" style="position: absolute;">
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#00ccff;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#00ff88;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#00ccff;stop-opacity:1" />
+            </linearGradient>
+            <filter id="gradient-filter">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="0"/>
+            </filter>
+        </defs>
+    </svg>
+
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <a href="/">T-Sync.</a>
+            </div>
+        </div>
+        <div class="header-center">
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle">
+                            <span data-translate="nav-services">Наши сервисы</span>
+                            <img src="../assets/icons/arrow.png" class="dropdown-icon" alt="▼">
+                        </a>
+                        <div class="dropdown-menu-wrapper">
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="/">
+                                        <div class="menu-item-title" data-translate="nav-platform-title">T-Sync Platform</div>
+                                        <div class="menu-item-description" data-translate="nav-platform-desc">Платформа для управления тренировками</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../products/create-website/">
+                                        <div class="menu-item-title" data-translate="nav-creatium-title">T-Sync Creatium</div>
+                                        <div class="menu-item-description" data-translate="nav-creatium-desc">Создание персонального сайта</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../products/tsygram/">
+                                        <div class="menu-item-title" data-translate="nav-tsygram-title">Tsygram</div>
+                                        <div class="menu-item-description" data-translate="nav-tsygram-desc">Социальная сеть для спортсменов</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Мобильные сервисы в горизонтальном скролле -->
+                    <li class="mobile-services-scroller">
+                        <div class="services-scroll">
+                            <a href="/" class="service-card">
+                                <div class="menu-item-title" data-translate="nav-platform-title">T-Sync Platform</div>
+                                <div class="menu-item-description" data-translate="nav-platform-desc">Платформа для управления тренировками</div>
+                            </a>
+                            <a href="../products/create-website/" class="service-card">
+                                <div class="menu-item-title" data-translate="nav-creatium-title">T-Sync Creatium</div>
+                                <div class="menu-item-description" data-translate="nav-creatium-desc">Создание персонального сайта</div>
+                            </a>
+                            <a href="../products/tsygram/" class="service-card">
+                                <div class="menu-item-title" data-translate="nav-tsygram-title">Tsygram</div>
+                                <div class="menu-item-description" data-translate="nav-tsygram-desc">Социальная сеть для спортсменов</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="/price/" data-translate="nav-pricing" class="active">Тарифы</a></li>
+                    <li><a href="/roadmap/" data-translate="nav-roadmap">Роудмап</a></li>
+                    <li><a href="/ai/" data-translate="nav-ai">Ai</a></li>
+                    <!-- <li><a href="/help/" data-translate="nav-help">Справочный центр</a></li> -->
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <a href="/ai/">
+                <svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12,0c-0.257,6.518 -5.482,11.743 -12,12c6.518,0.257 11.743,5.482 12,12c0.257,-6.518 5.482,-11.743 12,-12c-6.518,-0.257 -11.743,-5.482 -12,-12zM12,17.163c-1.257,-2.124 -3.039,-3.906 -5.163,-5.163c2.124,-1.257 3.906,-3.039 5.163,-5.163c1.257,2.124 3.039,3.906 5.163,5.163c-2.124,1.257 -3.906,3.039 -5.163,5.163z"></path></g></g>
+                </svg>
+            </a>
+            <div class="language-dropdown" style="margin-right: 10px; position: relative;">
+                <a href="#" id="language-toggle" class="language-toggle-btn">
+                    <span id="current-lang" class="current-lang-text">EN</span>
+                </a>
+                <div class="language-menu" id="language-menu">
+                    <button class="lang-btn" data-lang="RU">
+                        <span class="check-left">✓</span>
+                        Русский
+                        <span class="check-right">✓</span>
+                    </button>
+                    <button class="lang-btn active" data-lang="EN">
+                        <span class="check-left">✓</span>
+                        English
+                        <span class="check-right">✓</span>
+                    </button>
+                </div>
+                
+                
+            </div>
+            <a href="#" class="header-button error-button" data-translate="nav-login">Войти</a>
+            <button class="mobile-menu-toggle" aria-label="Открыть меню">
+                <img src="../assets/icons/menu.png" alt="Меню" class="menu-icon">
+            </button>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="breadcrumbs" style="margin-top: 40px;">
+                <a  href="/" data-translate="pricing-breadcrumb-home">Главная</a> / <p data-translate="pricing-breadcrumb-pricing">Цены</p>
+            </div>
+            <h1 data-translate="pricing-plans-title">Тарифные планы</h1>
+            <p data-translate="pricing-plans-subtitle">Выберите подходящий тариф для себя или своей команды.</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 data-translate="pricing-basic-title">Базовый тариф</h3>
+                    <p class="price" data-translate="pricing-basic-price">₽0</p>
+                    <p data-translate="pricing-basic-subtitle">Для личного использования</p>
+                    <ul>
+                        <li data-translate="pricing-basic-feature1">Неограниченное создание комнат и тренировок</li>
+                        <li data-translate="pricing-basic-feature2">Допустимый размер хранилища: 1 ГБ</li>
+                        <li data-translate="pricing-basic-feature3">История изменений, удаленные данные: 30 дней</li>
+                        <li data-translate="pricing-basic-feature4">Поддержка: 9.00 - 18.00</li>
+                    </ul>
+                    <a href="#" class="pricing-button" data-translate="pricing-basic-button">Начать</a>
+                </div>
+                <div class="pricing-card highlight">
+                    <h3 data-translate="pricing-premium-title">Премиум тариф</h3>
+                    <p class="price" data-translate="pricing-premium-price"></p>
+                    <p data-translate="pricing-premium-subtitle">Для небольших команд</p>
+                    <ul>
+                        <li data-translate="pricing-premium-feature1">Неограниченное создание комнат и тренировок</li>
+                        <li data-translate="pricing-premium-feature2">Допустимый размер хранилища: 3 ГБ</li>
+                        <li data-translate="pricing-premium-feature3">История изменений, удаленные данные: 90 дней</li>
+                        <li data-translate="pricing-premium-feature4">Поддержка: 24/7</li>
+                    </ul>
+                    <a href="#" class="pricing-button primary" data-translate="pricing-premium-button">Попробовать бесплатно</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h1 data-translate="pricing-comparison-title">Сравнение тарифов</h1>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th data-translate="pricing-comparison-basic">Базовый</th>
+                        <th data-translate="pricing-comparison-premium">Премиум</th>
+                        <th data-translate="pricing-comparison-premium-plus">Премиум+</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-translate="pricing-feature-rooms">Создание комнат и тренировок</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td data-translate="pricing-feature-offline">Оффлайн-режим</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td data-translate="pricing-feature-dashboard">Дашборд прогресса</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td data-translate="pricing-feature-users">Добавление пользователей</td>
+                        <td>—</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td data-translate="pricing-feature-roles">Ролевой доступ</td>
+                        <td>—</td>
+                        <td>✓</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td data-translate="pricing-feature-export">Экспорт данных</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <td data-translate="pricing-feature-storage">Допустимый размер хранилища</td>
+                        <td data-translate="pricing-storage-1gb">до 1 ГБ</td>
+                        <td data-translate="pricing-storage-3gb">до 3 ГБ</td>
+                        <td data-translate="pricing-storage-unlimited">∞</td>
+                    </tr>
+                    <tr>
+                        <td data-translate="pricing-feature-history">История изменений, удаленные данные</td>
+                        <td data-translate="pricing-history-30">30 дней</td>
+                        <td data-translate="pricing-history-90">90 дней</td>
+                        <td data-translate="pricing-history-unlimited">∞</td>
+                    </tr>
+                    <tr>
+                        <td data-translate="pricing-feature-support">Поддержка</td>
+                        <td data-translate="pricing-support-limited">9.00 - 18.00</td>
+                        <td data-translate="pricing-support-24-7">24/7</td>
+                        <td data-translate="pricing-support-24-7">24/7</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">T-Sync.</a>
+                    <!-- <p class="footer-tagline">Платформа для тренировок и командной синхронизации.</p> -->
+                </div>
+                <div class="footer-columns">
+                    <div class="footer-col">
+                        <div class="footer-col-title" data-translate="footer-products">Продукты</div>
+                        <ul>
+                            <li><a href="/">T‑Sync Platform</a></li>
+                            <li><a href="/products/create-website/">T‑Sync Creatium</a></li>
+                            <li><a href="/products/tsygram/">Tsygram</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col-title" data-translate="footer-resources">Ресурсы</div>
+                        <ul>
+                            <li><a href="/price/" data-translate="footer-tariffs">Тарифы</a></li>
+                            <li><a href="/roadmap/" data-translate="footer-roadmap">Роудмап</a></li>
+                            <li><a href="/ai/" data-translate="footer-ai-assistant">AI‑ассистент</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col-title" data-translate="footer-more">Еще</div>
+                        <ul>
+                            <!-- <li><a href="/help/" data-translate="footer-help">Справочный центр</a></li> -->
+                            <li><a href="/privacy/" data-translate="footer-privacy">Политика Конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <span data-translate="footer-copyright">© 2025 T‑Sync</span>
+                    <span class="dot-sep">•</span>
+                    <a href="/privacy/" data-translate="footer-privacy">Политика Конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Вверх" -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Прокрутить вверх"></button>
+    <script src="../src/js/translations.js"></script>
+    <script src="../src/js/script.js"></script>
+    <script>
+        // Мягкая белая подсветка под курсором для карточек тарифов
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.pricing-card');
+            cards.forEach(function(card) {
+                card.addEventListener('mousemove', function(e) {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    card.style.setProperty('--x', x + 'px');
+                    card.style.setProperty('--y', y + 'px');
+                });
+                card.addEventListener('mouseleave', function() {
+                    card.style.removeProperty('--x');
+                    card.style.removeProperty('--y');
+                });
+                // touch поддержка
+                card.addEventListener('touchmove', function(e) {
+                    if (e.touches && e.touches.length > 0) {
+                        const t = e.touches[0];
+                        const rect = card.getBoundingClientRect();
+                        const x = t.clientX - rect.left;
+                        const y = t.clientY - rect.top;
+                        card.style.setProperty('--x', x + 'px');
+                        card.style.setProperty('--y', y + 'px');
+                    }
+                }, { passive: true });
+                card.addEventListener('touchend', function() {
+                    card.style.removeProperty('--x');
+                    card.style.removeProperty('--y');
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

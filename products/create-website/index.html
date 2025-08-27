@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Sync. | Главная</title>
+    
+    <link rel="stylesheet" href="/src/css/normalize.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <!-- Градиентные определения для SVG -->
+    <svg width="0" height="0" style="position: absolute;">
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#00ccff;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#00ff88;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#00ccff;stop-opacity:1" />
+            </linearGradient>
+            <filter id="gradient-filter">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="0"/>
+            </filter>
+        </defs>
+    </svg>
+
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <a href="/">T-Sync.</a>
+            </div>
+        </div>
+        <div class="header-center">
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle">
+                            <span data-translate="nav-services">Наши сервисы</span>
+                            <img src="/assets/icons/arrow.png" class="dropdown-icon" alt="▼">
+                        </a>
+                        <div class="dropdown-menu-wrapper">
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="/">
+                                        <div class="menu-item-title" data-translate="nav-platform-title">T-Sync Platform</div>
+                                        <div class="menu-item-description" data-translate="nav-platform-desc">Платформа для управления тренировками</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/products/create-website/" class="active">
+                                        <div class="menu-item-title" data-translate="nav-creatium-title">T-Sync Creatium</div>
+                                        <div class="menu-item-description" data-translate="nav-creatium-desc">Создание персонального сайта</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/products/tsygram/">
+                                        <div class="menu-item-title" data-translate="nav-tsygram-title">Tsygram</div>
+                                        <div class="menu-item-description" data-translate="nav-tsygram-desc">Социальная сеть для спортсменов</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Мобильные сервисы в горизонтальном скролле -->
+                    <li class="mobile-services-scroller">
+                        <div class="services-scroll">
+                            <a href="/" class="service-card">
+                                <div class="menu-item-title" data-translate="nav-platform-title">T-Sync Platform</div>
+                                <div class="menu-item-description" data-translate="nav-platform-desc">Платформа для управления тренировками</div>
+                            </a>
+                            <a href="/products/create-website/" class="service-card active">
+                                <div class="menu-item-title" data-translate="nav-creatium-title">T-Sync Creatium</div>
+                                <div class="menu-item-description" data-translate="nav-creatium-desc">Создание персонального сайта</div>
+                            </a>
+                            <a href="/products/tsygram/" class="service-card">
+                                <div class="menu-item-title" data-translate="nav-tsygram-title">Tsygram</div>
+                                <div class="menu-item-description" data-translate="nav-tsygram-desc">Социальная сеть для спортсменов</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="/price/" data-translate="nav-pricing">Тарифы</a></li>
+                    <li><a href="/roadmap/" data-translate="nav-roadmap">Роудмап</a></li>
+                    <li><a href="/ai/" data-translate="nav-ai">Ai</a></li>
+                    <!-- <li><a href="/help/" data-translate="nav-help">Справочный центр</a></li> -->
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <a href="/ai/">
+                <svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12,0c-0.257,6.518 -5.482,11.743 -12,12c6.518,0.257 11.743,5.482 12,12c0.257,-6.518 5.482,-11.743 12,-12c-6.518,-0.257 -11.743,-5.482 -12,-12zM12,17.163c-1.257,-2.124 -3.039,-3.906 -5.163,-5.163c2.124,-1.257 3.906,-3.039 5.163,-5.163c1.257,2.124 3.039,3.906 5.163,5.163c-2.124,1.257 -3.906,3.039 -5.163,5.163z"></path></g></g>
+                </svg>
+            </a>
+            <div class="language-dropdown" style="margin-right: 10px; position: relative;">
+                <a href="#" id="language-toggle" class="language-toggle-btn">
+                    <span id="current-lang" class="current-lang-text">EN</span>
+                </a>
+                <div class="language-menu" id="language-menu">
+                    <button class="lang-btn" data-lang="RU">
+                        <span class="check-left">✓</span>
+                        Русский
+                        <span class="check-right">✓</span>
+                    </button>
+                    <button class="lang-btn active" data-lang="EN">
+                        <span class="check-left">✓</span>
+                        English
+                        <span class="check-right">✓</span>
+                    </button>
+                </div>
+            </div>
+            <a href="#" class="header-button error-button" data-translate="nav-login">Войти</a>
+            <button class="mobile-menu-toggle" aria-label="Открыть меню">
+                <img src="/assets/icons/menu.png" alt="Меню" class="menu-icon">
+            </button>
+        </div>
+    </header>
+
+    <section class="create-website-hero">
+        <div class="hero-content-wrapper">
+            <div class="hero-text-content">
+                <h1 class="hero-title" data-translate="cw-hero-title" data-translate-html>Создайте персональный сайт за минуты, вместе с <span class="highlight-word">T-Sync Creatium</span></h1>
+                <div class="hero-buttons">
+                    <a href="#" class="hero-button-primary error-button" data-translate="cw-create-site">Создать сайт</a>
+                    <button class="hero-button-secondary" id="view-examples-btn" onclick="scrollToTemplates()" data-translate="cw-view-templates">Посмотреть шаблоны</button>
+                </div>
+            </div>
+            <div class="hero-image"></div>
+        </div>
+    </section>
+
+    <!-- Роудмап -->
+    <section class="roadmap-section">
+        <div class="roadmap-container">
+            
+            <!-- Блок предложений -->
+            <div class="suggestions-section">
+                <div class="suggestions-content">
+                    <div class="suggestions-text">
+                        <h1 data-translate="cw-quick-start-title">Быстрый старт</h1>
+                        <p data-translate="cw-quick-start-desc">Самый простой способ запустить свой веб-сайт.</p>
+                    </div>
+                    <a href="https://t.me/leonidsupv" class="hero-button error-button" target="_blank" data-translate="cw-fill-data">Заполнить данные</a>
+                </div>
+            </div>
+            
+            <!-- Новая секция "Одно пространство для каждой команды" -->
+            <div class="teams-section">
+                
+                <div class="teams-header">
+                    <h2 data-translate="cw-more-productive">Больше продуктивности. Меньше инструментов.</h2>
+                </div>
+                
+                <div class="teams-grid">
+                    
+                    <div class="team-card">
+                        <div class="team-icon">🌐</div>
+                        <h3 data-translate="cw-card-profile-title">Личный профиль</h3>
+                        <p data-translate="cw-card-profile-desc">Создайте персональную страницу с достижениями и статистикой</p>
+                    </div>
+                    
+                    <div class="team-card">
+                        <div class="team-icon">🏆</div>
+                        <h3 data-translate="cw-card-achievements-title">Ваши достижения</h3>
+                        <p data-translate="cw-card-achievements-desc">Добавляйте медали, рекорды и спортивные успехи</p>
+                    </div>
+                    
+                    <div class="team-card">
+                        <div class="team-icon">💌</div>
+                        <h3 data-translate="cw-card-contacts-title">Контакты</h3>
+                        <p data-translate="cw-card-contacts-desc">Дайте возможность связаться с вами</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+            <div class="roadmap-content">
+                <!-- Шаблоны сайта -->
+                <div class="roadmap-category" id="templates">
+                    <h1 data-translate="cw-templates-title">Шаблоны сайтов</h1>
+                    
+                    <div class="templates-coming-soon">
+                        <h3 data-translate="cw-templates-soon-title">Шаблоны скоро появятся</h3>
+                        <p data-translate="cw-templates-soon-desc">Мы работаем над созданием красивых и функциональных шаблонов для ваших сайтов.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Кнопка "Вверх" -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Прокрутить вверх">
+    </button>
+
+    <script src="/src/js/translations.js"></script>
+    <script src="/src/js/script.js"></script>
+    <script>
+        // Белая подсветка, следующая за курсором, для .team-card
+        document.addEventListener('DOMContentLoaded', function() {
+            const teamCards = document.querySelectorAll('.team-card');
+            teamCards.forEach(function(card) {
+                card.addEventListener('mousemove', function(e) {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    card.style.setProperty('--x', x + 'px');
+                    card.style.setProperty('--y', y + 'px');
+                });
+                card.addEventListener('mouseleave', function() {
+                    card.style.removeProperty('--x');
+                    card.style.removeProperty('--y');
+                });
+                // touch поддержка
+                card.addEventListener('touchmove', function(e) {
+                    if (e.touches && e.touches.length > 0) {
+                        const t = e.touches[0];
+                        const rect = card.getBoundingClientRect();
+                        const x = t.clientX - rect.left;
+                        const y = t.clientY - rect.top;
+                        card.style.setProperty('--x', x + 'px');
+                        card.style.setProperty('--y', y + 'px');
+                    }
+                }, { passive: true });
+                card.addEventListener('touchend', function() {
+                    card.style.removeProperty('--x');
+                    card.style.removeProperty('--y');
+                });
+            });
+        });
+        function scrollToTemplates() {
+            const templatesSection = document.getElementById('templates');
+            if (templatesSection) {
+                templatesSection.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+    </script>
+</body>
+</html>

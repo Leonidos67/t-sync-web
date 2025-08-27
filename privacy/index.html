@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="privacy-page-title">Политика конфиденциальности – T‑Sync</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../src/css/normalize.css">
+
+</head>
+<body>
+    
+    <!-- Градиентные определения для SVG -->
+    <svg width="0" height="0" style="position: absolute;">
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#00ccff;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#00ff88;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#00ccff;stop-opacity:1" />
+            </linearGradient>
+            <filter id="gradient-filter">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="0"/>
+            </filter>
+        </defs>
+    </svg>
+
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <a href="/">T-Sync.</a>
+            </div>
+        </div>
+        <div class="header-center">
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle">
+                            <span data-translate="nav-services">Наши сервисы</span>
+                            <img src="/assets/icons/arrow.png" class="dropdown-icon" alt="▼">
+                        </a>
+                        <div class="dropdown-menu-wrapper">
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="/">
+                                        <div class="menu-item-title" data-translate="nav-platform-title">T-Sync Platform</div>
+                                        <div class="menu-item-description" data-translate="nav-platform-desc">Платформа для управления тренировками</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/products/create-website/">
+                                        <div class="menu-item-title" data-translate="nav-creatium-title">T-Sync Creatium</div>
+                                        <div class="menu-item-description" data-translate="nav-creatium-desc">Создание персонального сайта</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/products/tsygram/">
+                                        <div class="menu-item-title" data-translate="nav-tsygram-title">Tsygram</div>
+                                        <div class="menu-item-description" data-translate="nav-tsygram-desc">Социальная сеть для спортсменов</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Мобильные сервисы в горизонтальном скролле -->
+                    <li class="mobile-services-scroller">
+                        <div class="services-scroll">
+                            <a href="/" class="service-card">
+                                <div class="menu-item-title" data-translate="nav-platform-title">T-Sync Platform</div>
+                                <div class="menu-item-description" data-translate="nav-platform-desc">Платформа для управления тренировками</div>
+                            </a>
+                            <a href="/products/create-website/" class="service-card">
+                                <div class="menu-item-title" data-translate="nav-creatium-title">T-Sync Creatium</div>
+                                <div class="menu-item-description" data-translate="nav-creatium-desc">Создание персонального сайта</div>
+                            </a>
+                            <a href="/products/tsygram/" class="service-card">
+                                <div class="menu-item-title" data-translate="nav-tsygram-title">Tsygram</div>
+                                <div class="menu-item-description" data-translate="nav-tsygram-desc">Социальная сеть для спортсменов</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="/price/" data-translate="nav-pricing">Тарифы</a></li>
+                    <li><a href="/roadmap/" data-translate="nav-roadmap">Роудмап</a></li>
+                    <li><a href="/ai/" data-translate="nav-ai">Ai</a></li>
+                    <!-- <li><a href="/help/" data-translate="nav-help">Справочный центр</a></li> -->
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <a href="/ai/">
+                <svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12,0c-0.257,6.518 -5.482,11.743 -12,12c6.518,0.257 11.743,5.482 12,12c0.257,-6.518 5.482,-11.743 12,-12c-6.518,-0.257 -11.743,-5.482 -12,-12zM12,17.163c-1.257,-2.124 -3.039,-3.906 -5.163,-5.163c2.124,-1.257 3.906,-3.039 5.163,-5.163c1.257,2.124 3.039,3.906 5.163,5.163c-2.124,1.257 -3.906,3.039 -5.163,5.163z"></path></g></g>
+                </svg>
+            </a>
+            <div class="language-dropdown" style="margin-right: 10px; position: relative;">
+                <a href="#" id="language-toggle" class="language-toggle-btn">
+                    <span id="current-lang" class="current-lang-text">EN</span>
+                </a>
+                <div class="language-menu" id="language-menu">
+                    <button class="lang-btn" data-lang="RU">
+                        <span class="check-left">✓</span>
+                        Русский
+                        <span class="check-right">✓</span>
+                    </button>
+                    <button class="lang-btn active" data-lang="EN">
+                        <span class="check-left">✓</span>
+                        English
+                        <span class="check-right">✓</span>
+                    </button>
+                </div>
+            </div>
+            <a href="#" class="header-button error-button" data-translate="nav-login">Войти</a>
+            <button class="mobile-menu-toggle" aria-label="Открыть меню">
+                <img src="/assets/icons/menu.png" alt="Меню" class="menu-icon">
+            </button>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="breadcrumbs" style="margin-top: 40px;">
+                <a href="/" data-translate="pricing-breadcrumb-home">Главная</a> / <p data-translate="privacy-breadcrumb-title">Политика конфиденциальности</p>
+            </div>
+            <h1 data-translate="privacy-title">🔒 Политика конфиденциальности T‑Sync</h1>
+            <p><span data-translate="privacy-last-updated-label">Последнее обновление:</span> <span id="lastUpdated"></span></p>
+
+            <div class="section-nav">
+                <a href="#section-1" class="section-link" data-translate="privacy-link-1">1. Общие положения</a>
+                <a href="#section-2" class="section-link" data-translate="privacy-link-2">2. Собираемые данные</a>
+                <a href="#section-3" class="section-link" data-translate="privacy-link-3">3. Использование данных</a>
+                <a href="#section-4" class="section-link" data-translate="privacy-link-4">4. Передача данных</a>
+                <a href="#section-5" class="section-link" data-translate="privacy-link-5">5. Защита данных</a>
+                <a href="#section-6" class="section-link" data-translate="privacy-link-6">6. Файлы Cookie</a>
+                <a href="#section-7" class="section-link" data-translate="privacy-link-7">7. Права пользователей</a>
+                <a href="#section-8" class="section-link" data-translate="privacy-link-8">8. Изменения в Политике Конфиденциальности</a>
+            </div>
+            
+            <div class="privacy-content">
+                <section id="section-1">
+                <h2 data-translate="privacy-sec1-title">1. Общие положения</h2>
+                    <p data-translate="privacy-sec1-p1" data-translate-html>1.1. Настоящая Политика конфиденциальности регулирует порядок сбора, хранения, использования и защиты персональных данных пользователей платформы <strong>T‑Sync</strong>.</p>
+                    <p data-translate="privacy-sec1-p2" data-translate-html>1.2. Платформа предназначена для тренеров и спортсменов, ведущих совместную работу в формате <strong>B2B</strong> (ведение тренировок, планирование нагрузок, мониторинг прогресса).</p>
+                    <p data-translate="privacy-sec1-p3">1.3. Используя Платформу, вы соглашаетесь с условиями данной Политики.</p>
+                </section>
+
+                <section id="section-2">
+                    <h2 data-translate="privacy-sec2-title">2. Какие данные мы собираем?</h2>
+                    <p data-translate="privacy-sec2-intro">Мы собираем информацию, когда вы предоставляете ее нам, когда пользуетесь программой или услугами, а также когда ее предоставляют нам другие источники, как описано ниже.</p>
+                    <h3 data-translate="privacy-sec2-2-1-title">2.1. Информация, которую вы нам предоставляете:</h3>
+                    <ul>
+                        <li data-translate="privacy-sec2-2-1-li1" data-translate-html><strong>Создание учетной записи:</strong> Когда вы создаете учетную запись или иным образом пользуетесь Услугами, мы собираем такую информацию, как ваше имя, адрес электронной почты, пароль, должность в вашей команде или на предприятии, а также необязательную фотографию профиля.</li>
+                        <li data-translate="privacy-sec2-2-1-li2" data-translate-html><strong>Ваши сообщения с нами:</strong> Мы собираем от вас информацию, такую как адрес электронной почты, номер телефона или почтовый адрес, когда вы запрашиваете информацию о наших услугах, регистрируетесь на рассылку новостей, запрашиваете клиентскую или техническую поддержку или иным образом связываетесь с нами. Мы также собираем содержимое сообщений или вложений, которые вы можете отправлять нам, а также другую информацию, которую вы предпочитаете предоставлять, и которая может быть связана с вашими сообщениями.</li>
+                        <li data-translate="privacy-sec2-2-1-li3" data-translate-html><strong>Информация об оплате:</strong> Когда вы приобретаете подписку на Услуги, вам необходимо будет предоставить платежную информацию (например, данные финансового счета, информацию о доставке) для оформления вашей подписки. Мы используем сторонних поставщиков платежных услуг для обработки платежей по Услугам. Мы можем получать информацию, связанную с вашей платежной информацией, такую как платежный адрес и информация о транзакции, но мы не храним платежную информацию напрямую в Сервисах. Платежная информация хранится и обрабатывается нашими поставщиками платежных услуг от нашего имени.</li>
+                        <li data-translate="privacy-sec2-2-1-li4" data-translate-html><strong>Опросы:</strong> Мы можем связаться с вами для участия в опросах. Если вы решите принять участие, вас могут попросить предоставить определенную информацию, которая может включать контактную информацию и другую информацию о вас.</li>
+                        <li data-translate="privacy-sec2-2-1-li5" data-translate-html><strong>Интерактивные функции:</strong> Мы можем предлагать интерактивные функции, такие как форумы, блоги, службы чата и обмена сообщениями, а также страницы в социальных сетях. Мы и другие лица, которые пользуются нашим веб-сайтом или Услугами, можем собирать информацию, которую вы отправляете или делаете доступной с помощью этих интерактивных функций. Любой контент, который вы предоставляете через общедоступные разделы этих функций, будет считаться «общедоступным» и на него не распространяются меры защиты конфиденциальности, упомянутые в настоящем документе. Используя эти интерактивные функции, вы понимаете, что предоставленная вами информация может быть просмотрена и использована третьими лицами в своих собственных целях.</li>
+                    </ul>
+                    <h3 data-translate="privacy-sec2-2-2-title">2.2. Автоматически собираемые данные:</h3>
+                    <ul>
+                        <li data-translate="privacy-sec2-2-2-li1" data-translate-html><strong>Автоматический сбор данных:</strong> Мы отслеживаем определенную информацию о вас, когда вы посещаете сайт и взаимодействуете с ним. Эта информация может включать ваш IP‑адрес, настройки пользователя, MAC‑адрес, идентификаторы файлов cookie, оператора мобильной связи, мобильную рекламу и другие уникальные идентификаторы, сведения о вашем браузере, операционной системе или устройстве, информацию о местоположении (включая общее местоположение, полученное на основе вашего IP‑адреса), интернет‑провайдере, страницы, которые вы посещаете до, во время и после использования Веб‑сайта или Услуг, информация о ссылках, по которым вы переходите, информация о том, как вы взаимодействуете с Веб‑сайтом или Услугами, включая частоту и продолжительность ваших действий, и другую информацию о том, как вы используете Веб‑сайт или Услуги. Информация, которую мы собираем, может быть связана с учетными записями и другими устройствами.</li>
+                        <li data-translate="privacy-sec2-2-2-li2" data-translate-html><strong>Файлы cookie:</strong> Мы, а также третьи стороны, которые предоставляют контент, рекламу или другие функциональные возможности в Сервисах, можем использовать файлы cookie, пиксельные теги, локальное хранилище и другие технологии («Технологии») для автоматического сбора информации через Веб‑сайт или услуги. Технологии — это, по сути, небольшие файлы данных, размещаемые на ваших устройствах, которые позволяют нам и нашим партнерам записывать определенные фрагменты информации всякий раз, когда вы посещаете наши Сервисы или взаимодействуете с ними.</li>
+                        <li data-translate="privacy-sec2-2-2-li3" data-translate-html><strong>Аналитика:</strong> Мы также можем использовать сторонних поставщиков услуг для сбора и обработки аналитических данных и другой информации на нашем веб‑сайте или в Сервисах. Эти сторонние поставщики услуг могут использовать технологии для сбора и хранения аналитических данных и другой информации. У них есть свои собственные политики конфиденциальности, касающиеся того, как они используют аналитику и другую информацию, и мы не имеем доступа к использованию третьими лицами файлов cookie или других технологий отслеживания и не контролируем их.</li>
+                </ul>
+                </section>
+
+                <section id="section-3">
+                    <h2 data-translate="privacy-sec3-title">3. Как мы используем данные?</h2>
+                    <p data-translate="privacy-sec3-intro">Мы используем вашу информацию для различных деловых целей, в том числе для:</p>
+                    <ul>
+                        <li data-translate="privacy-sec3-li1" data-translate-html><strong>Создание и управление профилями:</strong> Персональные данные используются для формирования индивидуальных профилей пользователей, обеспечения доступа к платформе и персонализации интерфейса.</li>
+                        <li data-translate="privacy-sec3-li2" data-translate-html><strong>Управление рабочими пространствами:</strong> Если вы зарегистрируете учетную запись T‑Sync или свяжете учетную запись с адресом электронной почты, предоставленным вашей организацией, мы можем передавать вашей организации информацию о вас и любых рабочих пространствах, принадлежащих вам или управляемых вами. Такая информация может включать ваше имя, адрес электронной почты и фотографию профиля, а также название рабочей области, идентификатор рабочей области, размер членства, дату создания вашей рабочей области, адрес электронной почты и содержимое вашей рабочей области в вашей организации.</li>
+                        <li data-translate="privacy-sec3-li3" data-translate-html><strong>Анализ эффективности тренировок:</strong> Система автоматически обрабатывает статистику выполнения упражнений для оценки прогресса и корректировки нагрузок.</li>
+                </ul>
+                </section>
+
+                <section id="section-4">
+                    <h2 data-translate="privacy-sec4-title">4. Кому мы передаем данные?</h2>
+                    <p data-translate="privacy-sec4-p1" data-translate-html>4.1. <strong>Тренер ↔ Спортсмен</strong> – данные доступны в рамках их взаимодействия на Платформе.</p>
+                    <p data-translate="privacy-sec4-p2" data-translate-html>4.2. <strong>Технические подрядчики</strong> – только для обеспечения работы сервиса (хостинг, аналитика).</p>
+                    <p data-translate="privacy-sec4-p3" data-translate-html>4.3. <strong>Государственные органы</strong> – только по законному требованию.</p>
+                </section>
+
+                <section id="section-5">
+                    <h2 data-translate="privacy-sec5-title">5. Защита данных</h2>
+                    <p data-translate="privacy-sec5-p1" data-translate-html>5.1. Мы используем:<br>— Шифрование (SSL/TLS)<br>— Регулярные проверки безопасности<br>— Ограниченный доступ к данным</p>
+                    <p data-translate="privacy-sec5-p2" data-translate-html>5.2. Пользователи обязаны:<br>— Не передавать логины/пароли третьим лицам<br>— Использовать сложные пароли</p>
+                </section>
+
+                <section id="section-6">
+                    <h2 data-translate="privacy-sec6-title">6. Cookies и аналогичные технологии</h2>
+                    <p data-translate="privacy-sec6-intro">6.1. Платформа использует cookies для:</p>
+                    <ul>
+                        <li data-translate="privacy-sec6-li1">Авторизации</li>
+                        <li data-translate="privacy-sec6-li2">Анализа посещаемости</li>
+                    </ul>
+                    <p data-translate="privacy-sec6-note">6.2. Можно отключить cookies в настройках браузера, но это повлияет на функциональность.</p>
+                </section>
+
+                <section id="section-7">
+                    <h2 data-translate="privacy-sec7-title">7. Права пользователей</h2>
+                        <p data-translate="privacy-sec7-intro">Вы можете:</p>
+                        <ul>
+                            <li data-translate="privacy-sec7-li1">Запросить доступ к своим данным</li>
+                            <li data-translate="privacy-sec7-li2">Исправить неточности</li>
+                            <li data-translate="privacy-sec7-li3">Удалить аккаунт (данные будут обезличены)</li>
+                            <li data-translate="privacy-sec7-li4">Отозвать согласие на обработку</li>
+                    </ul>
+                    <!-- <p>Запросы направляйте на: <a href="mailto:support@t-sync.ru">support@t-sync.ru</a> или через поддержку в Платформе.</p> -->
+                </section>
+
+                <section id="section-8">
+                    <h2 data-translate="privacy-sec8-title">8. Изменения в Политике Конфиденциальности</h2>
+                    <p data-translate="privacy-sec8-p1">Мы можем время от времени пересматривать эту Политику конфиденциальности по нашему собственному усмотрению. Если в этой Политике конфиденциальности произойдут какие-либо существенные изменения, мы уведомим вас об этом в соответствии с требованиями действующего законодательства. Вы понимаете и соглашаетесь с тем, что будет считаться, что вы приняли обновленную Политику конфиденциальности, если вы продолжите пользоваться Услугами после вступления в силу новой Политики конфиденциальности.</p>
+                </section>
+
+                <section id="contacts">
+                    <h2 data-translate="privacy-contacts-title">Контактная информация</h2>
+                    <!-- <p>📧 Email: <a href="mailto:support@t-sync.ru">support@t-sync.ru</a></p> -->
+                    <p data-translate="privacy-contacts-site" data-translate-html>🌐 Сайт: <a href="http://t-sync.ru" target="_blank" rel="noopener noreferrer">t-sync.ru</a></p>
+                    <p data-translate="privacy-contacts-phone" data-translate-html>📱 Телефон: <a href="tel:+79646150520">+7 964 615 05 20</a></p>
+                    <div data-translate="privacy-contacts-inn">ИНН 672908781554</div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">T-Sync.</a>
+                    <!-- <p class="footer-tagline">Платформа для тренировок и командной синхронизации.</p> -->
+                </div>
+                <div class="footer-columns">
+                    <div class="footer-col">
+                        <div class="footer-col-title" data-translate="footer-products">Продукты</div>
+                        <ul>
+                            <li><a href="/">T‑Sync Platform</a></li>
+                            <li><a href="/products/create-website/">T‑Sync Creatium</a></li>
+                            <li><a href="/products/tsygram/">Tsygram</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col-title" data-translate="footer-resources">Ресурсы</div>
+                        <ul>
+                            <li><a href="/price/" data-translate="footer-tariffs">Тарифы</a></li>
+                            <li><a href="/roadmap/" data-translate="footer-roadmap">Роудмап</a></li>
+                            <li><a href="/ai/" data-translate="footer-ai-assistant">AI‑ассистент</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col-title" data-translate="footer-more">Еще</div>
+                        <ul>
+                            <!-- <li><a href="/help/">Справочный центр</a></li> -->
+                            <li><a href="/privacy/" data-translate="footer-privacy">Политика Конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <span data-translate="footer-copyright">© 2025 T‑Sync</span>
+                    <span class="dot-sep">•</span>
+                    <a href="/privacy/" data-translate="footer-privacy">Политика Конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Вверх" -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Прокрутить вверх"></button>
+
+    <script src="../src/js/translations.js"></script>
+    <script src="../src/js/script.js"></script>
+<script>
+// Мобильное меню + плавная прокрутка + дата обновления
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const nav = document.querySelector('nav');
+    const menuIcon = document.querySelector('.menu-icon');
+    
+    if (mobileMenuToggle && nav && menuIcon) {
+    mobileMenuToggle.addEventListener('click', function() {
+        nav.classList.toggle('active');
+        if (nav.classList.contains('active')) {
+            menuIcon.src = '../assets/icons/close.png';
+            menuIcon.alt = 'Закрыть меню';
+        } else {
+            menuIcon.src = '../assets/icons/menu.png';
+            menuIcon.alt = 'Меню';
+        }
+    });
+    
+    document.addEventListener('click', function(event) {
+        if (!nav.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
+            nav.classList.remove('active');
+            menuIcon.src = '../assets/icons/menu.png';
+            menuIcon.alt = 'Меню';
+        }
+    });
+    }
+
+    document.querySelectorAll('.dropdown .dropdown-toggle').forEach(function(toggle){
+        toggle.addEventListener('click', function(e){
+            e.preventDefault();
+            this.closest('.dropdown').classList.toggle('active');
+        });
+    });
+
+    // Плавная прокрутка по оглавлению
+    document.querySelectorAll('.section-nav a').forEach(function(link){
+        link.addEventListener('click', function(e){
+            const href = this.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
+                const el = document.querySelector(href);
+                if (el) { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+            }
+        });
+    });
+
+    // Дата обновления (в зависимости от выбранного языка)
+    const dateTarget = document.getElementById('lastUpdated');
+    if (dateTarget) {
+        const d = new Date();
+        const lang = localStorage.getItem('selectedLanguage') || 'RU';
+        const locale = lang === 'EN' ? 'en-US' : 'ru-RU';
+        dateTarget.textContent = d.toLocaleDateString(locale);
+    }
+});
+</script>
+
+</body>
+</html>
