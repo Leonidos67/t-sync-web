@@ -293,6 +293,14 @@ const translations = {
         'footer-privacy': 'Политика Конфиденциальности',
         'footer-copyright': '© 2025 T‑Sync',
         'footer-ai-assistant': 'AI‑ассистент',
+        'footer-link-platform': 'T‑Sync Platform',
+        'footer-link-creatium': 'T‑Sync Creatium',
+        'footer-link-tsygram': 'Tsygram',
+        'footer-tariffs': 'Тарифы',
+        'footer-roadmap': 'Роудмап',
+        
+        // Бренд
+        'brand-name': 'T‑Sync.',
         // Hero секция
         'launch-date': 'Запуск платформы: 01.10.2025',
         'hero-title-line1': 'Платформа для',
@@ -307,10 +315,54 @@ const translations = {
         'stats-uptime': 'Всегда на связи и без сбоев, всегда надежен.',
         'stats-users': 'Активных пользователей в системе.',
         'stats-support': 'Настоящие люди/Ии-ассистент - всегда готовы помочь.',
-        
+
         // Partners
         'partners-title': 'С кем работаем',
 
+        // Pricing page
+        'pricing-page-title': 'Цены – T‑Sync',
+        'pricing-breadcrumb-home': 'Главная',
+        'pricing-breadcrumb-pricing': 'Цены',
+        'pricing-plans-title': 'Тарифные планы',
+        'pricing-plans-subtitle': 'Выберите подходящий тариф для себя или своей команды.',
+        'pricing-basic-title': 'Базовый тариф',
+        'pricing-basic-price': '₽0',
+        'pricing-basic-subtitle': 'Для личного использования',
+        'pricing-basic-feature1': 'Неограниченное создание комнат и тренировок',
+        'pricing-basic-feature2': 'Допустимый размер хранилища: 1 ГБ',
+        'pricing-basic-feature3': 'История изменений, удаленные данные: 30 дней',
+        'pricing-basic-feature4': 'Поддержка: 9.00 - 18.00',
+        'pricing-basic-button': 'Начать',
+        'pricing-premium-title': 'Премиум тариф',
+        'pricing-premium-price': 'от 199 руб',
+        'pricing-premium-subtitle': 'Для небольших команд',
+        'pricing-premium-feature1': 'Неограниченное создание комнат и тренировок',
+        'pricing-premium-feature2': 'Допустимый размер хранилища: 3 ГБ',
+        'pricing-premium-feature3': 'История изменений, удаленные данные: 90 дней',
+        'pricing-premium-feature4': 'Поддержка: 24/7',
+        'pricing-premium-button': 'Попробовать бесплатно',
+        'pricing-comparison-title': 'Сравнение тарифов',
+        'pricing-comparison-basic': 'Базовый',
+        'pricing-comparison-premium': 'Премиум',
+        'pricing-comparison-premium-plus': 'Премиум+',
+        'pricing-feature-rooms': 'Создание комнат и тренировок',
+        'pricing-feature-offline': 'Оффлайн-режим',
+        'pricing-feature-dashboard': 'Дашборд прогресса',
+        'pricing-feature-users': 'Добавление пользователей',
+        'pricing-feature-roles': 'Ролевой доступ',
+        'pricing-feature-export': 'Экспорт данных',
+        'pricing-feature-storage': 'Допустимый размер хранилища',
+        'pricing-storage-1gb': 'до 1 ГБ',
+        'pricing-storage-3gb': 'до 3 ГБ',
+        'pricing-storage-unlimited': '∞',
+        'pricing-feature-history': 'История изменений, удаленные данные',
+        'pricing-history-30': '30 дней',
+        'pricing-history-90': '90 дней',
+        'pricing-history-unlimited': '∞',
+        'pricing-feature-support': 'Поддержка',
+        'pricing-support-limited': '9.00 - 18.00',
+        'pricing-support-24-7': '24/7',
+        
         // Преимущества (benefits)
         'benefits-title': 'Наши преимущества',
         'benefit-access-title': 'Гибкие настройки доступа',
@@ -325,7 +377,7 @@ const translations = {
         'benefit-integration-desc': 'Подключение Garmin Connect, Slack и других платформ для полной автоматизации.',
         'benefit-analytics-title': 'Детальная аналитика и отчеты',
         'benefit-analytics-desc': 'Прогресс в виде понятных графиков, статистика нагрузок и детальные отчеты по тренировкам.',
-
+        
         // Network section
         'network-center': 'вы',
         'network-garmin-title': 'Garmin Connect',
@@ -374,7 +426,7 @@ const translations = {
         'hero-text': '🤝 Build training workflows, track analytics, and sync your team — all in one place. A B2B platform for managing training.',
         'hero-button': 'Create beta account',
         'scroll-hint': 'Scroll',
-        
+
         // Partners
         'partners-title': 'Who we work with',
 
@@ -383,7 +435,7 @@ const translations = {
         'stats-uptime': 'Always online and reliable.',
         'stats-users': 'Active users on the platform.',
         'stats-support': 'Real people/AI assistant — always ready to help.',
-
+        
         // Benefits
         'benefits-title': 'Our benefits',
         'benefit-access-title': 'Flexible access control',
@@ -398,7 +450,7 @@ const translations = {
         'benefit-integration-desc': 'Connect Garmin Connect, Slack, and more for full automation.',
         'benefit-analytics-title': 'Detailed analytics and reports',
         'benefit-analytics-desc': 'Clear graphs, load statistics, and detailed training reports.',
-
+        
         // Network section
         'network-center': 'you',
         'network-garmin-title': 'Garmin Connect',
@@ -413,6 +465,83 @@ const translations = {
         'network-export-desc': 'Export created workouts to a convenient format',
         'network-other-title': 'Other capabilities',
         'network-other-desc': 'Create your personal site and a page on Tsygram',
+        'footer-link-platform': 'T‑Sync Platform',
+        'footer-link-creatium': 'T‑Sync Creatium',
+        'footer-link-tsygram': 'Tsygram',
+        'footer-products': 'Products',
+        'footer-resources': 'Resources',
+        'footer-more': 'More',
+        'footer-privacy': 'Privacy Policy',
+        'footer-copyright': '© 2025 T‑Sync',
+        'footer-ai-assistant': 'AI assistant',
+        'footer-tariffs': 'Pricing',
+        'footer-roadmap': 'Roadmap',
+        
+        // Brand
+        'brand-name': 'T‑Sync.',
+
+        // Pricing page
+        'pricing-page-title': 'Pricing – T‑Sync',
+        'pricing-breadcrumb-home': 'Home',
+        'pricing-breadcrumb-pricing': 'Pricing',
+        'pricing-plans-title': 'Pricing plans',
+        'pricing-plans-subtitle': 'Choose the right plan for you or your team.',
+        'pricing-basic-title': 'Basic plan',
+        'pricing-basic-price': 'Free',
+        'pricing-basic-subtitle': 'For personal use',
+        'pricing-basic-feature1': 'Unlimited rooms and workouts',
+        'pricing-basic-feature2': 'Storage limit: 1 GB',
+        'pricing-basic-feature3': 'Version history, deleted data: 30 days',
+        'pricing-basic-feature4': 'Support: 9am - 6pm',
+        'pricing-basic-button': 'Get started',
+        'pricing-premium-title': 'Premium plan',
+        'pricing-premium-price': 'from 199 rub',
+        'pricing-premium-subtitle': 'For small teams',
+        'pricing-premium-feature1': 'Unlimited rooms and workouts',
+        'pricing-premium-feature2': 'Storage limit: 3 GB',
+        'pricing-premium-feature3': 'Version history, deleted data: 90 days',
+        'pricing-premium-feature4': 'Support: 24/7',
+        'pricing-premium-button': 'Try for free',
+        'pricing-comparison-title': 'Plan comparison',
+        'pricing-comparison-basic': 'Basic',
+        'pricing-comparison-premium': 'Premium',
+        'pricing-comparison-premium-plus': 'Premium+',
+        'pricing-feature-rooms': 'Rooms and workouts',
+        'pricing-feature-offline': 'Offline mode',
+        'pricing-feature-dashboard': 'Progress dashboard',
+        'pricing-feature-users': 'Add users',
+        'pricing-feature-roles': 'Role-based access',
+        'pricing-feature-export': 'Data export',
+        'pricing-feature-storage': 'Storage limit',
+        'pricing-storage-1gb': 'up to 1 GB',
+        'pricing-storage-3gb': 'up to 3 GB',
+        'pricing-storage-unlimited': '∞',
+        'pricing-feature-history': 'Version history, deleted data',
+        'pricing-history-30': '30 days',
+        'pricing-history-90': '90 days',
+        'pricing-history-unlimited': '∞',
+        'pricing-feature-support': 'Support',
+        'pricing-support-limited': '9am - 6pm',
+        'pricing-support-24-7': '24/7',
+
+        // Create Website (Creatium) page
+        'cw-page-title': 'T‑Sync. | Create Website',
+        'cw-hero-title': 'Create your personal site in minutes with <span class="highlight-word">T‑Sync Creatium</span>',
+        'cw-create-site': 'Create a site',
+        'cw-view-templates': 'View templates',
+        'cw-quick-start-title': 'Quick start',
+        'cw-quick-start-desc': 'The easiest way to launch your website.',
+        'cw-fill-data': 'Fill in data',
+        'cw-more-productive': 'More productivity. Fewer tools.',
+        'cw-card-profile-title': 'Personal profile',
+        'cw-card-profile-desc': 'Create a personal page with achievements and stats',
+        'cw-card-achievements-title': 'Your achievements',
+        'cw-card-achievements-desc': 'Add medals, records, and sports successes',
+        'cw-card-contacts-title': 'Contacts',
+        'cw-card-contacts-desc': 'Give people a way to contact you',
+        'cw-templates-title': 'Site templates',
+        'cw-templates-soon-title': 'Templates coming soon',
+        'cw-templates-soon-desc': 'We are working on beautiful and functional templates for your sites.',
         'error-404-title': '404. Page Not Found',
         'error-404-button': 'Back to Home'
     }
