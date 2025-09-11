@@ -1,0 +1,750 @@
+/* Общие стили */
+body {
+    background: #111;
+    margin: 0;
+    overflow-x: hidden;
+    color: #fff;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    cursor: default;
+    transition: padding-right 0.3s ease;
+}
+
+/* Класс для блокировки скролла */
+body.scroll-locked {
+    overflow: hidden;
+    padding-right: 15px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+/* Дополнительная защита для мобильных устройств */
+@media (max-width: 768px) {
+    body.scroll-locked {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+/* Секции */
+.section {
+    padding: 60px 20px;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-left: 0;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0 0 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 0 0 15px 0;
+    color: #fff;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+    text-align: left;
+    max-width: 100%;
+    margin-left: 0;
+}
+
+/* Контейнер роудмапа */
+.roadmap-container {
+    margin-top: 40px;
+}
+
+/* Секции роудмапа */
+.roadmap-section {
+    margin-bottom: 60px;
+}
+
+.roadmap-section:last-child {
+    margin-bottom: 0;
+}
+
+/* Счетчик в заголовке */
+.count {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+    font-weight: normal;
+}
+
+/* Горизонтальная прокрутка карточек */
+.roadmap-cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 0;
+    scrollbar-width: thin;
+    scrollbar-color: #333 #111;
+}
+
+.roadmap-cards::-webkit-scrollbar {
+    height: 8px;
+}
+
+.roadmap-cards::-webkit-scrollbar-track {
+    background: #111;
+    border-radius: 4px;
+}
+
+.roadmap-cards::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+.roadmap-cards::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Карточки */
+.roadmap-card {
+    background: #000;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 350px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.roadmap-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    border-color: #555;
+}
+
+/* Убрали стили для изображений в карточках */
+
+/* Описание карточки */
+.roadmap-card p {
+    margin-bottom: 20px;
+    color: #aaa;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Особенности */
+.card-features {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.feature {
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #ddd;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        margin-top: 80px;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    .roadmap-card {
+        min-width: 280px;
+        padding: 18px;
+    }
+    
+    .roadmap-cards {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+        margin-top: 0px;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    .section {
+        padding: 40px 15px;
+    }
+    
+    .roadmap-card {
+        min-width: 260px;
+        padding: 15px;
+    }
+    
+    .roadmap-cards {
+        gap: 12px;
+    }
+}
+
+/* Блок предложений */
+.suggestions-section {
+    margin-top: 0px;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(0, 255, 136, 0.05), rgba(0, 204, 255, 0.05));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.suggestions-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #00ff88, #00ccff);
+}
+
+.suggestions-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.suggestions-text {
+    flex: 1;
+}
+
+.suggestions-content h1 {
+    text-align: left;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.suggestions-content p {
+    text-align: left;
+    max-width: 600px;
+    margin: 0;
+    font-size: 1.1rem;
+    color: #bbb;
+    line-height: 1.6;
+}
+
+.suggestions-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #00ff88, #00ccff);
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 255, 136, 0.3);
+}
+
+.suggestions-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 255, 136, 0.4);
+    background: linear-gradient(135deg, #00cc66, #0099cc);
+}
+
+.suggestions-button:active {
+    transform: translateY(0);
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: 0;
+}
+
+.hero-button:hover {
+    background: #ddd;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 480px) {
+    .hero-button {
+        padding: 12px 25px;
+    }
+}
+
+/* Адаптивность для блока предложений */
+@media (max-width: 768px) {
+    .suggestions-section {
+        margin-top: 60px;
+        padding: 40px 20px;
+    }
+    
+    .suggestions-content {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    
+    .suggestions-text {
+        text-align: left;
+    }
+    
+    .suggestions-content h1 {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+    
+    .suggestions-content p {
+        font-size: 1rem;
+        text-align: left;
+    }
+    
+    .hero-button {
+        padding: 12px 24px;
+        font-size: 1rem;
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .suggestions-section {
+        margin-top: 40px;
+        padding: 30px 15px;
+    }
+    
+    .suggestions-content {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .suggestions-content h1 {
+        font-size: 1.6rem;
+        text-align: left;
+    }
+    
+    .suggestions-content p {
+        text-align: left;
+    }
+    
+    .hero-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        align-self: flex-start;
+    }
+}
+
+/* Стили для модального окна */
+.roadmap-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.roadmap-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    background: #000;
+    border: 1px solid #333;
+    border-radius: 0;
+    border-left: 1px solid #333;
+    overflow: hidden;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Мобильный заголовок (скрыт по умолчанию) */
+.mobile-header {
+    display: none;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.mobile-header h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    flex: 1;
+}
+
+.mobile-header .modal-close {
+    position: static;
+    width: 35px;
+    height: 35px;
+    margin-left: 15px;
+}
+
+.roadmap-modal.show .modal-content {
+    transform: translateX(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 1002;
+}
+
+.roadmap-window-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Скрываем десктопную кнопку на мобильных */
+@media (max-width: 768px) {
+    .desktop-close {
+        display: none;
+    }
+}
+
+.modal-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.modal-close img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-image {
+    width: calc(100% - 40px);
+    height: 200px;
+    overflow: hidden;
+    background: #111;
+    flex-shrink: 0;
+    margin: 20px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Подсветка под изображением */
+.modal-image::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    right: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 204, 255, 0.1));
+    border-radius: 50%;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.modal-info {
+    padding: 30px;
+    padding-top: 20px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.modal-info h2 {
+    font-size: 1.8rem;
+    margin: 0 0 20px 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.modal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.modal-tag {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #ddd;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modal-description {
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.modal-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-status {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.modal-status.completed {
+    background: rgba(0, 255, 136, 0.2);
+    color: #00ff88;
+    border: 1px solid rgba(0, 255, 136, 0.3);
+}
+
+.modal-status.in-development {
+    background: rgba(0, 204, 255, 0.2);
+    color: #00ccff;
+    border: 1px solid rgba(0, 204, 255, 0.3);
+}
+
+.modal-status.planned {
+    background: rgba(255, 193, 7, 0.2);
+    color: #ffc107;
+    border: 1px solid rgba(255, 193, 7, 0.3);
+}
+
+.modal-status.discussed {
+    background: rgba(158, 158, 158, 0.2);
+    color: #9e9e9e;
+    border: 1px solid rgba(158, 158, 158, 0.3);
+}
+
+.modal-date {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Адаптивность для модального окна */
+@media (max-width: 768px) {
+    .roadmap-modal {
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .modal-content {
+        width: 90%;
+        height: 90vh;
+        margin: 20px;
+        margin-top: 40px;
+        border-radius: 16px 16px 0 0;
+        transform: translateY(100%);
+    }
+    
+    .roadmap-modal.show .modal-content {
+        transform: translateY(0);
+    }
+    
+    /* Показываем мобильный заголовок */
+    .mobile-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    /* Скрываем обычный заголовок */
+    .modal-info h2 {
+        display: none;
+    }
+    
+    .modal-info {
+        padding: 25px 20px;
+        padding-top: 15px;
+    }
+    
+    .modal-image {
+        height: 150px;
+        width: calc(100% - 30px);
+        margin: 15px;
+        order: -1; /* Перемещаем изображение выше */
+    }
+    
+    .modal-image::after {
+        left: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .roadmap-modal {
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .modal-content {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        margin-top: 40px;
+        border-radius: 20px 20px 0 0;
+        transform: translateY(100%);
+    }
+    
+    .roadmap-modal.show .modal-content {
+        transform: translateY(0);
+    }
+    
+    /* Мобильный заголовок */
+    .mobile-header {
+        padding: 15px;
+    }
+    
+    .mobile-header h2 {
+        font-size: 1.2rem;
+    }
+    
+    .mobile-header .modal-close {
+        width: 30px;
+        height: 30px;
+    }
+    
+    /* Скрываем обычный заголовок */
+    .modal-info h2 {
+        display: none;
+    }
+    
+    .modal-info {
+        padding: 20px 15px;
+        padding-top: 10px;
+    }
+    
+    .modal-image {
+        height: 120px;
+        width: calc(100% - 20px);
+        margin: 10px;
+        order: -1; /* Перемещаем изображение выше */
+    }
+    
+    .modal-image::after {
+        left: 10px;
+        right: 10px;
+    }
+    
+    .modal-tags {
+        gap: 8px;
+    }
+    
+    .modal-tag {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}

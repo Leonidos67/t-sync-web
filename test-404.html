@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест 404 - T-Sync.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        .test-links {
+            margin: 30px 0;
+        }
+        .test-links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #00ff88;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .test-links a:hover {
+            background: #00ccff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Тест страницы 404</h1>
+    <p>Нажмите на ссылки ниже, чтобы протестировать обработку ошибок 404:</p>
+    
+    <div class="test-links">
+        <a href="/fdh">Тест /fdh</a>
+        <a href="/несуществующая-страница">Тест /несуществующая-страница</a>
+        <a href="/test/404">Тест /test/404</a>
+        <a href="/random-page">Тест /random-page</a>
+    </div>
+    
+    <p>Если вы видите эту страницу, значит сервер работает корректно.</p>
+    <p><a href="/" style="color: #00ff88;">Вернуться на главную</a></p>
+</body>
+</html>

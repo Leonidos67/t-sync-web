@@ -1,0 +1,13 @@
+{
+  "name": "t-sync-web",
+  "version": "1.0.0",
+  "description": "T-Sync Web Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["t-sync", "sports", "platform"],
+  "author": "T-Sync Team",
+  "license": "MIT"
+}

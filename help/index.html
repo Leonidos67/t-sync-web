@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title data-translate="help-center-title">Справочный центр</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../src/css/normalize.css">
+
+</head>
+<body>
+    
+    <!-- Градиентные определения для SVG -->
+    <svg width="0" height="0" style="position: absolute;">
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#00ccff;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#00ff88;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#00ccff;stop-opacity:1" />
+            </linearGradient>
+            <filter id="gradient-filter">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="0"/>
+            </filter>
+        </defs>
+    </svg>
+    
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <a href="/">T-Sync.</a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle">
+                        <span data-translate="nav-services">Наши сервисы</span>
+                        <img src="../assets/icons/arrow.png" class="dropdown-icon" alt="▼">
+                    </a>
+                    <div class="dropdown-menu-wrapper">
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/">
+                                    <div class="menu-item-title">T-Sync Platform</div>
+                                    <div class="menu-item-description">Платформа для управления тренировками</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../products/create-website/">
+                                    <div class="menu-item-title">T-Sync Creatium</div>
+                                    <div class="menu-item-description">Создание персонального сайта</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../products/tsygram/">
+                                    <div class="menu-item-title">Tsygram</div>
+                                    <div class="menu-item-description">Социальная сеть для спортсменов</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="/price/" data-translate="nav-pricing">Тарифы</a></li>
+                <li><a href="/roadmap/" data-translate="nav-roadmap">Роудмап</a></li>
+                <li><a href="/ai/" data-translate="nav-ai">Ai</a></li>
+                <li><a href="/help/" class="active" data-translate="nav-help">Справочный центр</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <a href="/ai/">
+                <svg style="margin-right: 20px;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12,0c-0.257,6.518 -5.482,11.743 -12,12c6.518,0.257 11.743,5.482 12,12c0.257,-6.518 5.482,-11.743 12,-12c-6.518,-0.257 -11.743,-5.482 -12,-12zM12,17.163c-1.257,-2.124 -3.039,-3.906 -5.163,-5.163c2.124,-1.257 3.906,-3.039 5.163,-5.163c1.257,2.124 3.039,3.906 5.163,5.163c-2.124,1.257 -3.906,3.039 -5.163,5.163z"></path></g></g>
+                </svg>
+            </a>
+            <a href="#" class="header-button error-button" data-translate="nav-login">Войти</a>
+            <button class="mobile-menu-toggle" aria-label="Открыть меню">
+                <img src="../assets/icons/menu.png" alt="Меню" class="menu-icon">
+            </button>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="help-hero">
+                <div class="help-hero-text">
+                    <div class="breadcrumbs">
+                        <a href="/" data-translate="help-breadcrumb-home">Главная</a> / <p data-translate="help-breadcrumb-help">Справочный центр</p>
+                    </div>
+                    <h1 data-translate="help-center-title">Справочный центр</h1>
+                    <p data-translate="help-center-subtitle">Начните с основ или изучите расширенные функции, чтобы стать экспертом T-Sync.</p>
+                </div>
+                <div class="help-hero-image" role="img" aria-label="Справочный центр"></div>
+            </div>
+            
+            <div class="help-top">
+                <div class="help-search">
+                    <input type="search" id="helpSearch" placeholder="Поиск..." aria-label="Поиск">
+                </div>
+
+                <section id="quick-start" class="ref-section">
+                    <h2 data-translate="help-popular-topics">НАШИ СЕРВИСЫ</h2>
+                    <div class="ref-grid">
+                        <a class="ref-card" href="#getting-started">
+                            <img class="ref-card-illustration" src="../assets/help/step1.jpg" alt="Начало работы">
+                            <div class="ref-card-text">
+                                <h3 data-translate="help-card-getting-started-title">Начало работы</h3>
+                                <p data-translate="help-card-getting-started-desc">Создайте аккаунт, настройте профиль и изучите основы платформы</p>
+                            </div>
+                        </a>
+                        <a class="ref-card" href="#sharing">
+                            <img class="ref-card-illustration" src="../assets/help/step2.jpg" alt="Комментарии и напоминания">
+                            <div class="ref-card-text">
+                                <h3 data-translate="help-card-rooms-title">Комнаты и тренировки</h3>
+                                <p data-translate="help-card-rooms-desc">Создавайте тренировки, управляйте командами и отслеживайте прогресс</p>
+                            </div>
+                        </a>
+                        <a class="ref-card" href="/ai/">
+                            <img class="ref-card-illustration" src="../assets/help/step3.jpg" alt="T‑Sync AI">
+                            <div class="ref-card-text">
+                                <h3 data-translate="help-card-settings-title">Настройки</h3>
+                                <p data-translate="help-card-settings-desc">Персонализируйте интерфейс и управляйте аккаунтом</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="help-layout">
+                <aside class="help-sidebar">
+                    <nav class="help-nav" aria-label="Навигация по разделам">
+                        <ul>
+                            <!-- 1 -->
+                            <li class="nav-item">
+                                 <div class="nav-header">
+                                     <a href="#getting-started">#1. Начало работы</a>
+                                     <button class="nav-toggle" aria-label="Показать подпункты">
+                                         <img src="../assets/icons/arrow.png" class="toggle-icon" alt="▼">
+                                     </button>
+                                 </div>
+                                <ul class="nav-submenu">
+                                    <li><a href="#getting-started-basics">📍 Введение</a></li>
+                                    <li><a href="#getting-started-first-steps">👣 Первые шаги</a></li>
+                                </ul>
+                            </li>
+                            <!-- 2 -->
+                            <li class="nav-item">
+                                 <div class="nav-header">
+                                     <a href="#workspace">#2. Рабочее пространство</a>
+                                     <button class="nav-toggle" aria-label="Показать подпункты">
+                                         <img src="../assets/icons/arrow.png" class="toggle-icon" alt="▼">
+                                     </button>
+                                 </div>
+                                <ul class="nav-submenu">
+                                    <li><a href="#workspace-navigation">📍 Введение</a></li>
+                                    <li><a href="#workspace-settings">🔎 Навигация</a></li>
+                                    <li><a href="#workspace-settings">📁 Создание и удаление зоны</a></li>
+                                </ul>
+                            </li>
+                            <!-- 3 -->
+                            <li class="nav-item">
+                                 <div class="nav-header">
+                                     <a href="#content">#3. Комнаты и тренировки</a>
+                                     <button class="nav-toggle" aria-label="Показать подпункты">
+                                         <img src="../assets/icons/arrow.png" class="toggle-icon" alt="▼">
+                                     </button>
+                                 </div>
+                                <ul class="nav-submenu">
+                                    <li><a href="#content-editing">📍 Введение</a></li>
+                                    <li><a href="#content-formatting">🧩 Все о комнатах и тренировках</a></li>
+                                    <li><a href="#content-formatting">✏️ Действия</a></li>
+                                </ul>
+                            </li>
+                            <!-- 4 -->
+                            <li class="nav-item">
+                                 <div class="nav-header">
+                                     <a href="#sharing">#4. Совместная работа</a>
+                                     <button class="nav-toggle" aria-label="Показать подпункты">
+                                         <img src="../assets/icons/arrow.png" class="toggle-icon" alt="▼">
+                                     </button>
+                                 </div>
+                                <ul class="nav-submenu">
+                                    <li><a href="#sharing-permissions">📍 Введение</a></li>
+                                    <li><a href="#sharing-invites">📣 Совместное использование и разрешения</a></li>
+                                    <li><a href="#sharing-invites">🔨 Управление участниками</a></li>
+                                    <li><a href="#sharing-invites">💼 Совместная работа</a></li>
+                                </ul>
+                            </li>
+                            <!-- 5 -->
+                            <li class="nav-item">
+                                 <div class="nav-header">
+                                     <a href="#troubleshooting">#5. Ии-ассистент</a>
+                                     <button class="nav-toggle" aria-label="Показать подпункты">
+                                         <img src="../assets/icons/arrow.png" class="toggle-icon" alt="▼">
+                                     </button>
+                                 </div>
+                                <ul class="nav-submenu">
+                                    <li><a href="#troubleshooting-login">🤖 Что такое T-Sync AI?</a></li>
+                                    <li><a href="#troubleshooting-performance">🪄 Заметки с ИИ (бета)</a></li>
+                                    <li><a href="#troubleshooting-performance">🎙️ Дополнительные ответы T-Sync AI</a></li>
+                                    <li><a href="#troubleshooting-performance">🎟️ Практики безопасности и конфиденциальности T-Sync AI</a></li>
+                                </ul>
+                            </li>
+                            <!-- 6 -->
+                            <li class="nav-item">
+                                 <div class="nav-header">
+                                     <a href="#integrations">#6. Данные и интеграции</a>
+                                     <button class="nav-toggle" aria-label="Показать подпункты">
+                                         <img src="../assets/icons/arrow.png" class="toggle-icon" alt="▼">
+                                     </button>
+                                 </div>
+                                <ul class="nav-submenu">
+                                    <li><a href="#integrations-export">🚚 Импорт и экспорт данных</a></li>
+                                    <li><a href="#integrations-export">💿 Резервное копирование данных</a></li>
+                                </ul>
+                            </li>
+                            <!-- 7 -->
+                            <li class="nav-item">
+                                 <div class="nav-header">
+                                     <a href="#billing">#7. Планы и оплата</a>
+                                     <button class="nav-toggle" aria-label="Показать подпункты">
+                                         <img src="../assets/icons/arrow.png" class="toggle-icon" alt="▼">
+                                     </button>
+                                 </div>
+                                <ul class="nav-submenu">
+                                    <li><a href="#billing-plans">💸 Изменение существующего плана</a></li>
+                                    <!-- <li><a href="#billing-payments">🧾 Биллинг</a></li> -->
+                                </ul>
+                            </li>
+                            <!-- 8 -->
+                            <li class="nav-item">
+                                 <div class="nav-header">
+                                     <a href="#security">#8. Безопасность и приватность</a>
+                                     <button class="nav-toggle" aria-label="Показать подпункты">
+                                         <img src="../assets/icons/arrow.png" class="toggle-icon" alt="▼">
+                                     </button>
+                                 </div>
+                                <ul class="nav-submenu">
+                                    <li><a href="#security-2fa">🔒 Практики обеспечения безопасности</a></li>
+                                    <li><a href="#security-privacy">🗝️ Политика конфиденциальности</a></li>
+                                    <li><a href="#security-privacy">🚨 Данные, доступные владельцу вашего рабочего пространства</a></li>
+                                    <li><a href="#security-privacy">☎️ Сообщить о неприемлемом контенте</a></li>
+                                    <li><a href="#security-privacy">🛡️ Модель совместной ответственности</a></li>
+                                    <li><a href="#security-privacy">🗃️ Размещение данных для T-Sync</a></li>
+                                </ul>
+                            </li>
+                            <!-- 9 -->
+                            <li class="nav-item">
+                                 <div class="nav-header">
+                                     <a href="#security">#9. Настройки</a>
+                                     <button class="nav-toggle" aria-label="Показать подпункты">
+                                         <img src="../assets/icons/arrow.png" class="toggle-icon" alt="▼">
+                                     </button>
+                                 </div>
+                                <ul class="nav-submenu">
+                                    <li><a href="#security-2fa">⚙️ Настройки и предпочтения учетной записи</a></li>
+                                    <li><a href="#security-privacy">🛎 Настройки уведомлений</a></li>
+                                    <li><a href="#security-privacy">🗝️ Настройки рабочего пространства</a></li>
+                                    <li><a href="#security-privacy">🌐 Понятие IP-адресов и доменов</a></li>
+                                    <li><a href="#security-privacy">🏥 Конфигурация HIPAA</a></li>
+                                    <li><a href="#security-privacy">🚪 Согласие на доступ к данным</a></li>
+                                    <li><a href="#security-privacy">🗑 Удалить свою учетную запись</a></li>
+                                    <li><a href="#security-privacy">🔐 Войти и выйти</a></li>
+                                </ul>
+                            </li>
+                            <!-- 10 -->
+                            <li class="nav-item">
+                                 <div class="nav-header">
+                                     <a href="#troubleshooting">#10. Поиск неисправностей</a>
+                                     <button class="nav-toggle" aria-label="Показать подпункты">
+                                         <img src="../assets/icons/arrow.png" class="toggle-icon" alt="▼">
+                                     </button>
+                                 </div>
+                                <ul class="nav-submenu">
+                                    <li><a href="#troubleshooting-login">Сброс понятия</a></li>
+                                    <li><a href="#troubleshooting-performance">Я не могу получить доступ к аккаунту</a></li>
+                                    <li><a href="#troubleshooting-performance">Я не могу загрузить или просмотреть файл</a></li>
+                                    <li><a href="#troubleshooting-performance">Ошибки общего понятия</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+                
+                <div class="help-content">
+
+                    <section id="getting-started" class="ref-section">
+                        <h2>#1. Начало работы</h2>
+                        <div class="ref-grid">
+                            <a class="ref-card" href="#">
+                                <div class="ref-card-icon"></div>
+                                <div class="ref-card-text">
+                                    <h3>Старт здесь</h3>
+                                    <p>Обзор возможностей T‑Sync и первый вход.</p>
+                                </div>
+                            </a>
+                            <a class="ref-card" href="#">
+                                <div class="ref-card-icon"></div>
+                                <div class="ref-card-text">
+                                    <h3>Создание страницы</h3>
+                                    <p>Как создать первую страницу и структуру каталога.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section id="workspace" class="ref-section">
+                        <h2>2. Рабочее пространство</h2>
+                        <div class="ref-grid">
+                            <a class="ref-card" href="#">
+                                <div class="ref-card-icon"></div>
+                                <div class="ref-card-text">
+                                    <h3>Навигация</h3>
+                                    <p>Быстрый поиск и перемещение по разделам.</p>
+                                </div>
+                            </a>
+                            <a class="ref-card" href="#">
+                                <div class="ref-card-icon"></div>
+                                <div class="ref-card-text">
+                                    <h3>Команды и роли</h3>
+                                    <p>Права доступа и управление участниками.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section id="content" class="ref-section">
+                        <h2>3. Страницы и блоки</h2>
+                        <div class="ref-grid">
+                            <a class="ref-card" href="#">
+                                <div class="ref-card-icon"></div>
+                                <div class="ref-card-text">
+                                    <h3>Редактирование</h3>
+                                    <p>Форматирование текста, списки, медиа.</p>
+                                </div>
+                            </a>
+                            <a class="ref-card" href="#">
+                                <div class="ref-card-icon"></div>
+                                <div class="ref-card-text">
+                                    <h3>Шаблоны</h3>
+                                    <p>Используйте готовые пресеты для быстрого старта.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section id="databases" class="ref-section">
+                        <h2>4. Базы данных</h2>
+                        <div class="ref-grid">
+                            <a class="ref-card" href="#">
+                                <div class="ref-card-icon"></div>
+                                <div class="ref-card-text">
+                                    <h3>Свойства и представления</h3>
+                                    <p>Фильтры, сортировки и группировки.</p>
+                                </div>
+                            </a>
+                            <a class="ref-card" href="#">
+                                <div class="ref-card-icon"></div>
+                                <div class="ref-card-text">
+                                    <h3>Импорт данных</h3>
+                                    <p>Загрузка данных из CSV и внешних систем.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section id="sharing" class="ref-section">
+                        <h2>5. Совместная работа</h2>
+                        <div class="ref-grid">
+                            <a class="ref-card" href="#">
+                                <div class="ref-card-icon"></div>
+                                <div class="ref-card-text">
+                                    <h3>Права и доступ</h3>
+                                    <p>Общий доступ, приглашения и комментарии.</p>
+                                </div>
+                            </a>
+                            <a class="ref-card" href="#">
+                                <div class="ref-card-icon"></div>
+                                <div class="ref-card-text">
+                                    <h3>Уведомления</h3>
+                                    <p>Подписки, упоминания и напоминания.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section id="integrations" class="ref-section">
+                        <h2>6. Данные и интеграции</h2>
+                        <div class="ref-grid">
+                            <a class="ref-card" href="#">
+                                <div class="ref-card-icon"></div>
+                                <div class="ref-card-text">
+                                    <h3>Интеграции</h3>
+                                    <p>Подключение Garmin, Strava и других сервисов.</p>
+                                </div>
+                            </a>
+                            <a class="ref-card" href="#">
+                                <div class="ref-card-icon"></div>
+                                <div class="ref-card-text">
+                                    <h3>Экспорт и резервные копии</h3>
+                                    <p>Экспорт данных и восстановление.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section id="automation" class="ref-section">
+                        <h2>7. Автоматизации</h2>
+                        <div class="ref-grid">
+                            <a class="ref-card" href="#">
+                                <div class="ref-card-icon"></div>
+                                <div class="ref-card-text">
+                                    <h3>Правила и кнопки</h3>
+                                    <p>Настройка сценариев и быстрых действий.</p>
+                                </div>
+                            </a>
+                            <a class="ref-card" href="#">
+                                <div class="ref-card-icon"></div>
+                                <div class="ref-card-text">
+                                    <h3>Уведомления и вебхуки</h3>
+                                    <p>Интеграция событий с внешними системами.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section id="billing" class="ref-section">
+                        <h2>8. Планы и оплата</h2>
+                        <div class="ref-grid">
+                            <a class="ref-card" href="#">
+                                <div class="ref-card-icon"></div>
+                                <div class="ref-card-text">
+                                    <h3>Тарифы</h3>
+                                    <p>Выбор плана и возможности каждого тарифа.</p>
+                                </div>
+                            </a>
+                            <a class="ref-card" href="#">
+                                <div class="ref-card-icon"></div>
+                                <div class="ref-card-text">
+                                    <h3>Счета и платежи</h3>
+                                    <p>История оплат, квитанции и возвраты.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section id="security" class="ref-section">
+                        <h2>9. Безопасность и приватность</h2>
+                        <div class="ref-grid">
+                            <a class="ref-card" href="#">
+                                <div class="ref-card-icon"></div>
+                                <div class="ref-card-text">
+                                    <h3>Безопасность</h3>
+                                    <p>2FA, политика паролей и контроль доступа.</p>
+                                </div>
+                            </a>
+                            <a class="ref-card" href="#">
+                                <div class="ref-card-icon"></div>
+                                <div class="ref-card-text">
+                                    <h3>Конфиденциальность</h3>
+                                    <p>Хранение данных и обработка персональных данных.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section id="troubleshooting" class="ref-section">
+                        <h2>10. Устранение неполадок</h2>
+                        <div class="ref-grid">
+                            <a class="ref-card" href="#">
+                                <div class="ref-card-icon"></div>
+                                <div class="ref-card-text">
+                                    <h3>Не удаётся войти</h3>
+                                    <p>Частые причины и быстрые решения.</p>
+                                </div>
+                            </a>
+                            <a class="ref-card" href="#">
+                                <div class="ref-card-icon"></div>
+                                <div class="ref-card-text">
+                                    <h3>Ошибка загрузки данных</h3>
+                                    <p>Как диагностировать и что делать дальше.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">T-Sync.</a>
+                    <!-- <p class="footer-tagline">Платформа для тренировок и командной синхронизации.</p> -->
+                </div>
+                <div class="footer-columns">
+                    <div class="footer-col">
+                        <div class="footer-col-title">Продукты</div>
+                        <ul>
+                            <li><a href="/">T‑Sync Platform</a></li>
+                            <li><a href="/products/create-website/">T‑Sync Creatium</a></li>
+                            <li><a href="/products/tsygram/">Tsygram</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col-title">Ресурсы</div>
+                        <ul>
+                            <li><a href="/price/">Тарифы</a></li>
+                            <li><a href="/roadmap/">Роудмап</a></li>
+                            <li><a href="/ai/">AI‑ассистент</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col-title">Еще</div>
+                        <ul>
+                            <li><a href="/help/">Справочный центр</a></li>
+                            <li><a href="/privacy/">Политика Конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <span>© 2025 T‑Sync</span>
+                    <span class="dot-sep">•</span>
+                    <a href="/privacy/">Политика Конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Вверх" -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Прокрутить вверх">
+    </button>
+
+    <script src="../src/js/translations.js"></script>
+    <script src="../src/js/script.js"></script>
+    
+    <script>
+        // Функциональность сворачивания/разворачивания навигации
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggles = document.querySelectorAll('.nav-toggle');
+            
+            navToggles.forEach(toggle => {
+                toggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    const navItem = this.closest('.nav-item');
+                    const submenu = navItem.querySelector('.nav-submenu');
+                    const isExpanded = submenu.classList.contains('expanded');
+                    
+                                         // Убираем логику закрытия других подменю - теперь можно открывать несколько одновременно
+                    
+                                         // Открываем/закрываем текущее подменю
+                     if (!isExpanded) {
+                         submenu.classList.add('expanded');
+                         this.classList.add('expanded');
+                     } else {
+                         submenu.classList.remove('expanded');
+                         this.classList.remove('expanded');
+                     }
+                });
+            });
+        });
+        
+        // Подсветка карточек под курсором
+        document.addEventListener('DOMContentLoaded', function() {
+            const refCards = document.querySelectorAll('.ref-card');
+            refCards.forEach(card => {
+                card.addEventListener('mousemove', function(e) {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    card.style.setProperty('--x', x + 'px');
+                    card.style.setProperty('--y', y + 'px');
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

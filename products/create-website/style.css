@@ -1,0 +1,757 @@
+/* Роудмап секция */
+html {
+    scroll-behavior: smooth;
+}
+
+.roadmap-section {
+    padding: 100px 20px;
+    background: #111;
+}
+
+.roadmap-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.roadmap-container h1 {
+    font-size: 2.8rem;
+    margin: 0 0 20px 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.roadmap-container p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.roadmap-content {
+    margin-top: 60px;
+}
+
+.roadmap-category {
+    margin-bottom: 60px;
+}
+
+.templates-coming-soon {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 20px;
+    border: 2px solid #333;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.templates-coming-soon h3 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 0 0 20px 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.templates-coming-soon p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin: 0;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.roadmap-category h2 {
+    font-size: 2rem;
+    margin: 0 0 30px 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: left;
+    gap: 15px;
+}
+
+.count {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+    font-weight: normal;
+}
+
+.roadmap-cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px 0;
+    scrollbar-width: thin;
+    scrollbar-color: #333 #111;
+}
+
+.roadmap-cards::-webkit-scrollbar {
+    height: 8px;
+}
+
+.roadmap-cards::-webkit-scrollbar-track {
+    background: #111;
+    border-radius: 4px;
+}
+
+.roadmap-cards::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+.roadmap-cards::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.roadmap-card {
+    background: #000;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 350px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.roadmap-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    border-color: #555;
+}
+
+.roadmap-card h3 {
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 0 0 15px 0;
+    color: #fff;
+}
+
+.roadmap-card p {
+    margin-bottom: 20px;
+    color: #aaa;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.card-features {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.feature {
+    display: inline-block;
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: #ddd;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Блок предложений */
+.suggestions-section {
+    margin-top: 0px;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(0, 255, 136, 0.05), rgba(0, 204, 255, 0.05));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+.suggestions-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #00ff88, #00ccff);
+}
+
+.suggestions-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.suggestions-text {
+    flex: 1;
+}
+
+.suggestions-content h1 {
+    text-align: left;
+    font-size: 2.2rem;
+    margin: 0;
+    color: #fff;
+}
+
+.suggestions-content p {
+    text-align: left;
+    max-width: 600px;
+    margin: 0;
+    font-size: 1.1rem;
+    color: #bbb;
+    line-height: 1.6;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: 0;
+}
+
+.hero-button:hover {
+    background: #ddd;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для выделения слов */
+.highlight-word {
+    position: relative;
+    display: inline-block;
+    padding: 5px 20px;
+    z-index: 999;
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+    background: none !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.highlight-word::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    z-index: -1;
+    transform: skewX(-15deg);
+}
+
+/* Секция команд */
+.teams-section {
+    margin-bottom: 60px;
+    padding: 60px 30px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(20, 20, 20, 0.9));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.teams-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+}
+
+.teams-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.teams-header h2 {
+    font-size: 2.8rem;
+    margin: 0 0 20px 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #fff, #e0e0e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.teams-header-descr {
+    font-size: 1rem;
+    color: #bbb;
+    font-weight: 400;
+}
+
+.teams-subtitle {
+    font-size: 1.3rem;
+    color: #ccc;
+    margin: 30px 0 0 0;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+/* Убираю дублирующиеся стили */
+/* .teams-section > div:last-child {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.teams-section > div:last-child p {
+    font-size: 1.3rem;
+    color: #ccc;
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+} */
+
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.team-card {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 30px 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #00ff88, #00ccff);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-1px);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.team-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* Мягкая белая подсветка под курсором внутри карточек */
+.team-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(300px circle at var(--x, -100px) var(--y, -100px), rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.12) 40%, rgba(255, 255, 255, 0.06) 60%, transparent 75%);
+    filter: blur(18px);
+    mix-blend-mode: screen;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+}
+
+.team-card:hover::after {
+    opacity: 1;
+}
+
+.team-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.team-card h3 {
+    font-size: 1.4rem;
+    margin: 0 0 15px 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #bbb;
+    margin: 0;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .roadmap-container h1 {
+        font-size: 2rem;
+        margin-top: 80px;
+    }
+    
+    .roadmap-category h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    
+    .templates-coming-soon h3 {
+        font-size: 1.6rem;
+    }
+    
+    .templates-coming-soon p {
+        font-size: 1rem;
+    }
+    
+    .roadmap-section {
+        padding: 60px 20px;
+    }
+    
+    .suggestions-section {
+        margin-top: 60px;
+        padding: 40px 20px;
+    }
+    
+    .suggestions-content {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    
+    .suggestions-text {
+        width: 100%;
+    }
+    
+    .suggestions-text h1 {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+    
+    .suggestions-text p {
+        font-size: 1rem;
+        text-align: left;
+    }
+    
+    .hero-button {
+        padding: 12px 24px;
+        font-size: 1rem;
+        align-self: flex-start;
+    }
+    
+    /* Адаптивность для секции команд */
+    .teams-section {
+        padding: 40px 20px;
+        margin-bottom: 40px;
+    }
+    
+    .teams-header h2 {
+        font-size: 2rem;
+    }
+    
+    .teams-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .teams-section > div:last-child p {
+        font-size: 1.1rem;
+    }
+    
+    .teams-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .team-card {
+        padding: 25px 20px;
+    }
+    
+    .team-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .team-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .team-card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .roadmap-container h1 {
+        font-size: 1.8rem;
+        margin-top: 0px;
+    }
+    
+    .roadmap-category h2 {
+        font-size: 1.4rem;
+    }
+    
+    .templates-coming-soon h3 {
+        font-size: 1.4rem;
+    }
+    
+    .roadmap-section {
+        padding: 40px 15px;
+    }
+    
+    .suggestions-section {
+        margin-top: 40px;
+        padding: 30px 15px;
+    }
+    
+    .suggestions-content {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .suggestions-text h1 {
+        font-size: 1.6rem;
+        text-align: left;
+        margin: 0;
+    }
+    
+    .suggestions-text p {
+        text-align: left;
+        margin: 0;
+    }
+    
+    .hero-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        margin: 0;
+    }
+    
+    .templates-coming-soon {
+        padding: 40px 15px;
+    }
+    
+    /* Адаптивность для секции команд на мобильных */
+    .teams-section {
+        padding: 30px 15px;
+        margin-bottom: 30px;
+    }
+    
+    .teams-header h2 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+    
+    .teams-subtitle {
+        font-size: 1rem;
+    }
+    
+    .teams-section > div:last-child p {
+        font-size: 1rem;
+    }
+    
+    .teams-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .team-card {
+        padding: 20px 15px;
+    }
+    
+    .team-icon {
+        font-size: 2rem;
+        margin-bottom: 12px;
+    }
+    
+    .team-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    
+    .team-card p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Стили для create-website-hero */
+.create-website-hero {
+    background: #000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 280px 20px 40px;
+    position: relative;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 1;
+}
+
+.hero-content-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-image {
+    flex: 0 0 400px;
+    height: 400px;
+    background-image: url('../../assets/create-website-bnc.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text-content {
+    flex: 1;
+    text-align: left;
+}
+
+.hero-title {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    background: linear-gradient(135deg, #fff 0%, #e0e0e0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.hero-button-primary {
+    background: #fff;
+    color: #000;
+    padding: 16px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.hero-button-secondary {
+    background: transparent;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    font-family: inherit;
+    outline: none;
+}
+
+.hero-button-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.hero-button-secondary:active {
+    transform: scale(0.98);
+}
+
+.hero-button-secondary:focus {
+    border-color: rgba(255, 255, 255, 1);
+}
+
+/* Адаптивность для create-website-hero */
+@media (max-width: 768px) {
+    .hero-content-wrapper {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .hero-image {
+        flex: none;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .hero-text-content {
+        text-align: center;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .create-website-hero {
+        padding: 60px 15px 30px;
+    }
+
+    .hero-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+}
+

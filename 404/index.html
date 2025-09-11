@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Страница не найдена | T-Sync.</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/normalize.css">
+</head>
+<body>
+    
+    <!-- Градиентные определения для SVG -->
+    <svg width="0" height="0" style="position: absolute;">
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#00ccff;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#00ff88;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#00ccff;stop-opacity:1" />
+            </linearGradient>
+            <filter id="gradient-filter">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="0"/>
+            </filter>
+        </defs>
+    </svg>
+
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <a href="/">T-Sync.</a>
+            </div>
+        </div>
+        <div class="header-center">
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle">
+                            <span data-translate="nav-services">Наши сервисы</span>
+                            <img src="../assets/icons/arrow.png" class="dropdown-icon" alt="▼">
+                        </a>
+                        <div class="dropdown-menu-wrapper">
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="/">
+                                        <div class="menu-item-title" data-translate="nav-platform-title">T-Sync Platform</div>
+                                        <div class="menu-item-description" data-translate="nav-platform-desc">Платформа для управления тренировками</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../products/create-website/">
+                                        <div class="menu-item-title" data-translate="nav-creatium-title">T-Sync Creatium</div>
+                                        <div class="menu-item-description" data-translate="nav-creatium-desc">Создание персонального сайта</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../products/tsygram/">
+                                        <div class="menu-item-title" data-translate="nav-tsygram-title">Tsygram</div>
+                                        <div class="menu-item-description" data-translate="nav-tsygram-desc">Социальная сеть для спортсменов</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Мобильные сервисы в горизонтальном скролле -->
+                    <li class="mobile-services-scroller">
+                        <div class="services-scroll">
+                            <a href="/" class="service-card active">
+                                <div class="menu-item-title" data-translate="nav-platform-title">T-Sync Platform</div>
+                                <div class="menu-item-description" data-translate="nav-platform-desc">Платформа для управления тренировками</div>
+                            </a>
+                            <a href="../products/create-website/" class="service-card">
+                                <div class="menu-item-title" data-translate="nav-creatium-title">T-Sync Creatium</div>
+                                <div class="menu-item-description" data-translate="nav-creatium-desc">Создание персонального сайта</div>
+                            </a>
+                            <a href="../products/tsygram/" class="service-card">
+                                <div class="menu-item-title" data-translate="nav-tsygram-title">Tsygram</div>
+                                <div class="menu-item-description" data-translate="nav-tsygram-desc">Социальная сеть для спортсменов</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="/price/" data-translate="nav-pricing">Тарифы</a></li>
+                    <li><a href="/roadmap/" data-translate="nav-roadmap">Роудмап</a></li>
+                    <li><a href="/ai/" data-translate="nav-ai">Ai</a></li>
+                    <!-- <li><a href="/help/" data-translate="nav-help">Справочный центр</a></li> -->
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <a href="/ai/">
+                <svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12,0c-0.257,6.518 -5.482,11.743 -12,12c6.518,0.257 11.743,5.482 12,12c0.257,-6.518 5.482,-11.743 12,-12c-6.518,-0.257 -11.743,-5.482 -12,-12zM12,17.163c-1.257,-2.124 -3.039,-3.906 -5.163,-5.163c2.124,-1.257 3.906,-3.039 5.163,-5.163c1.257,2.124 3.039,3.906 5.163,5.163c-2.124,1.257 -3.906,3.039 -5.163,5.163z"></path></g></g>
+                </svg>
+            </a>
+            <div class="language-dropdown" style="margin-right: 10px; position: relative;">
+                <a href="#" id="language-toggle" class="language-toggle-btn">
+                    <span id="current-lang" class="current-lang-text">RU</span>
+                </a>
+                <div class="language-menu" id="language-menu">
+                    <button class="lang-btn active" data-lang="RU">
+                        <span class="check-left">✓</span>
+                        Русский
+                        <span class="check-right">✓</span>
+                    </button>
+                    <button class="lang-btn" data-lang="EN">
+                        <span class="check-left">✓</span>
+                        English
+                        <span class="check-right">✓</span>
+                    </button>
+                </div>
+            </div>
+            <a href="#" class="header-button error-button" data-translate="nav-login">Войти</a>
+            <button class="mobile-menu-toggle" aria-label="Открыть меню">
+                <img src="../assets/icons/menu.png" alt="Меню" class="menu-icon">
+            </button>
+        </div>
+    </header>
+
+    <!-- Основной контент страницы 404 -->
+    <main class="error-404-main">
+        <div class="error-404-container">
+            <div class="error-404-content">
+                <div class="error-404-number" data-translate="error-404-title">404. Страница не найдена</div>
+                <p class="error-404-description" data-translate="error-404-description">
+                    К сожалению, запрашиваемая страница не существует или была перемещена. 
+                    Возможно, вы перешли по неверной ссылке или ввели неправильный адрес.
+                </p>
+                <div class="error-404-actions">
+                    <a href="/" class="error-404-button primary" data-translate="error-404-button">Вернуться на главную</a>
+                </div>
+            </div>
+            <div class="error-404-illustration">
+                <div class="error-404-icon"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">T-Sync.</a>
+                </div>
+                <div class="footer-columns">
+                    <div class="footer-col">
+                        <div class="footer-col-title" data-translate="footer-products">Продукты</div>
+                        <ul>
+                            <li><a href="/">T‑Sync Platform</a></li>
+                            <li><a href="../products/create-website/">T‑Sync Creatium</a></li>
+                            <li><a href="../products/tsygram/">Tsygram</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col-title" data-translate="footer-resources">Ресурсы</div>
+                        <ul>
+                            <li><a href="/price/" data-translate="nav-pricing">Тарифы</a></li>
+                            <li><a href="/roadmap/" data-translate="nav-roadmap">Роудмап</a></li>
+                            <li><a href="/ai/" data-translate="footer-ai-assistant">AI‑ассистент</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col-title" data-translate="footer-more">Еще</div>
+                        <ul>
+                            <li><a href="/privacy/" data-translate="footer-privacy">Политика Конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <span data-translate="footer-copyright">© 2025 T‑Sync</span>
+                    <span class="dot-sep">•</span>
+                    <a href="/privacy/" data-translate="footer-privacy">Политика Конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../src/js/translations.js"></script>
+    <script src="../src/js/script.js"></script>
+</body>
+</html>

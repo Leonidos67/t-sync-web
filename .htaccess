@@ -1,0 +1,16 @@
+# Настройка страницы 404
+ErrorDocument 404 /404/
+
+# Включаем mod_rewrite
+RewriteEngine On
+
+# Перенаправление на страницу 404 для несуществующих файлов и папок
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /404/ [L]
+
+# Дополнительная проверка для файлов без расширения
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/404/
+RewriteRule ^(.*)$ /404/ [L]

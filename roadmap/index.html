@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title data-translate="roadmap-page-title">T‑Sync. | Роудмап</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../src/css/normalize.css">
+
+</head>
+<body>
+    
+    <!-- Градиентные определения для SVG -->
+    <svg width="0" height="0" style="position: absolute;">
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#00ccff;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#00ff88;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#00ccff;stop-opacity:1" />
+            </linearGradient>
+            <filter id="gradient-filter">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="0"/>
+            </filter>
+        </defs>
+    </svg>
+
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <a href="/">T-Sync.</a>
+            </div>
+        </div>
+        <div class="header-center">
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle">
+                            <span data-translate="nav-services">Наши сервисы</span>
+                            <img src="../assets/icons/arrow.png" class="dropdown-icon" alt="▼">
+                        </a>
+                        <div class="dropdown-menu-wrapper">
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="/">
+                                        <div class="menu-item-title" data-translate="nav-platform-title">T-Sync Platform</div>
+                                        <div class="menu-item-description" data-translate="nav-platform-desc">Платформа для управления тренировками</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../products/create-website/">
+                                        <div class="menu-item-title" data-translate="nav-creatium-title">T-Sync Creatium</div>
+                                        <div class="menu-item-description" data-translate="nav-creatium-desc">Создание персонального сайта</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../products/tsygram/">
+                                        <div class="menu-item-title" data-translate="nav-tsygram-title">Tsygram</div>
+                                        <div class="menu-item-description" data-translate="nav-tsygram-desc">Социальная сеть для спортсменов</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Мобильные сервисы в горизонтальном скролле -->
+                    <li class="mobile-services-scroller">
+                        <div class="services-scroll">
+                            <a href="/" class="service-card">
+                                <div class="menu-item-title" data-translate="nav-platform-title">T-Sync Platform</div>
+                                <div class="menu-item-description" data-translate="nav-platform-desc">Платформа для управления тренировками</div>
+                            </a>
+                            <a href="../products/create-website/" class="service-card">
+                                <div class="menu-item-title" data-translate="nav-creatium-title">T-Sync Creatium</div>
+                                <div class="menu-item-description" data-translate="nav-creatium-desc">Создание персонального сайта</div>
+                            </a>
+                            <a href="../products/tsygram/" class="service-card">
+                                <div class="menu-item-title" data-translate="nav-tsygram-title">Tsygram</div>
+                                <div class="menu-item-description" data-translate="nav-tsygram-desc">Социальная сеть для спортсменов</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="/price/" data-translate="nav-pricing">Тарифы</a></li>
+                    <li><a href="/roadmap/" data-translate="nav-roadmap" class="active">Роудмап</a></li>
+                    <li><a href="/ai/" data-translate="nav-ai">Ai</a></li>
+                    <!-- <li><a href="/help/" data-translate="nav-help">Справочный центр</a></li> -->
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <a href="/ai/">
+                <svg style="margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12,0c-0.257,6.518 -5.482,11.743 -12,12c6.518,0.257 11.743,5.482 12,12c0.257,-6.518 5.482,-11.743 12,-12c-6.518,-0.257 -11.743,-5.482 -12,-12zM12,17.163c-1.257,-2.124 -3.039,-3.906 -5.163,-5.163c2.124,-1.257 3.906,-3.039 5.163,-5.163c1.257,2.124 3.039,3.906 5.163,5.163c-2.124,1.257 -3.906,3.039 -5.163,5.163z"></path></g></g>
+                </svg>
+            </a>
+            <div class="language-dropdown" style="margin-right: 10px; position: relative;">
+                <a href="#" id="language-toggle" class="language-toggle-btn">
+                    <span id="current-lang" class="current-lang-text">EN</span>
+                </a>
+                <div class="language-menu" id="language-menu">
+                    <button class="lang-btn" data-lang="RU">
+                        <span class="check-left">✓</span>
+                        Русский
+                        <span class="check-right">✓</span>
+                    </button>
+                    <button class="lang-btn active" data-lang="EN">
+                        <span class="check-left">✓</span>
+                        English
+                        <span class="check-right">✓</span>
+                    </button>
+                </div>
+                
+                
+            </div>
+            <a href="#" class="header-button error-button" data-translate="nav-login">Войти</a>
+            <button class="mobile-menu-toggle" aria-label="Открыть меню">
+                <img src="../assets/icons/menu.png" alt="Меню" class="menu-icon">
+            </button>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="breadcrumbs" style="margin-top: 40px;">
+                <a href="/" data-translate="pricing-breadcrumb-home">Главная</a> / <p data-translate="roadmap-breadcrumb-title">Роудмап</p>
+            </div>
+            <h1 data-translate="roadmap-title">Роудмап</h1>
+            <p data-translate="roadmap-intro">Наши планы и прогресс по новым функциям.</p>
+            
+            <!-- Блок предложений -->
+            <div class="suggestions-section">
+                <div class="suggestions-content">
+                    <div class="suggestions-text">
+                        <h1 style="text-align: left;" data-translate="roadmap-suggestions-title">Есть предложения?</h1>
+                        <p data-translate="roadmap-suggestions-desc">Ваши идеи помогают сделать наш сервис еще лучше 🙌</p>
+                    </div>
+                    <a href="https://t.me/leonidsupv" class="hero-button" target="_blank" data-translate="roadmap-suggestions-cta">Предложить идею</a>
+                </div>
+            </div>
+            
+            <div class="roadmap-container">
+
+                <!-- Сделано -->
+                <div class="roadmap-section">
+                    <h2><span data-translate="roadmap-done">Сделано 🎉</span> <span class="count">(6)</span></h2>
+                    <div class="roadmap-cards">
+                        
+                        <div class="roadmap-card">
+                            <h3>Просмотр аналитики и отчетов тренировок</h3>
+                            <p>Возможность просмотра аналитики тренировок.</p>
+                            <div class="card-features">
+                                <span class="feature">#T-Sync Platform</span>
+                                <span class="feature">#Новая функция ✨</span>
+                                <span class="feature">#Улучшение 👍</span>
+                            </div>
+                        </div>
+                        
+                        <div class="roadmap-card">
+                            <h3>Добавлены drag-окна</h3>
+                            <p>Добавлена возможность перетаскивать модальные окна для автоматизации вашего взаимодействия в платформе.</p>
+                            <div class="card-features">
+                                <span class="feature">#T-Sync Platform</span>
+                                <span class="feature">#Новая функция ✨</span>
+                                <span class="feature">#Расширение 🔥</span>
+                            </div>
+                        </div>
+                        
+                        <div class="roadmap-card">
+                            <h3>Возможность добавлять участников</h3>
+                            <p>Добавлена возможность приглашать в рабочую зону других пользователей.</p>
+                            <div class="card-features">
+                                <span class="feature">#T-Sync Platform</span>
+                                <span class="feature">#Новая функция ✨</span>
+                                <span class="feature">#Расширение 🔥</span>
+                            </div>
+                        </div>
+
+                        <div class="roadmap-card">
+                            <h3>Создана платформа</h3>
+                            <p>Полностью рабочий функционал платформы.</p>
+                            <div class="card-features">
+                                <span class="feature">#T-Sync Platform</span>
+                                <span class="feature">#Конечный результат 🤝</span>
+                            </div>
+                        </div>
+                        
+                        <div class="roadmap-card">
+                            <h3>Дизайн платформы</h3>
+                            <p>Учреждение итогового дизайн платформы. Следующий шаг - разработка функционала.</p>
+                            <div class="card-features">
+                                <span class="feature">#T-Sync Platform</span>
+                                <span class="feature">#Дизайн 🎨</span>
+                            </div>
+                        </div>
+                        
+                        <div class="roadmap-card">
+                            <h3>Сайт ресурса</h3>
+                            <p>Информационный сайт ресурса. Последние новости и обновления.</p>
+                            <div class="card-features">
+                                <span class="feature">#T-Sync Platform</span>
+                                <span class="feature">#Новая функция ✨</span>
+                                <span class="feature">#Дизайн 🎨</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- В разработке -->
+                <div class="roadmap-section">
+                    <h2><span data-translate="roadmap-in-progress">В разработке 🛠️</span> <span class="count">(4)</span></h2>
+                    <div class="roadmap-cards">
+                        
+                        <div class="roadmap-card">
+                            <h3>Интеграция Garmin Connect</h3>
+                            <p>Возможность подключить аккаунт Garmin с выгрузкой тренировок.</p>
+                            <div class="card-features">
+                                <span class="feature">#T-Sync Platform</span>
+                                <span class="feature">#Новая функция ✨</span>
+                                <span class="feature">#Интеграция ⚡️</span>
+                            </div>
+                        </div>
+
+                        <div class="roadmap-card">
+                            <h3>Выбор шаблона для сайта</h3>
+                            <p>Возможность выбрать шаблон для сайта.</p>
+                            <div class="card-features">
+                                <span class="feature">#T-Sync Creatium</span>
+                                <span class="feature">#Новая функция ✨</span>
+                                <span class="feature">#Дизайн 🎨</span>
+                            </div>
+                        </div>
+
+                        <div class="roadmap-card">
+                            <h3>Создание сервиса T-Sync Creatium</h3>
+                            <p>Возможность создавать сайты о себе.</p>
+                            <div class="card-features">
+                                <span class="feature">#T-Sync Creatium</span>
+                                <span class="feature">#Новая функция ✨</span>
+                            </div>
+                        </div>
+
+                        <div class="roadmap-card">
+                            <h3>Создание сервиса Tsygram</h3>
+                            <p>Социальная сеть спортсменов и тренеров.</p>
+                            <div class="card-features">
+                                <span class="feature">#Tsygram</span>
+                                <span class="feature">#Новая функция ✨</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <!-- Запланировано -->
+                <div class="roadmap-section">
+                    <h2><span data-translate="roadmap-planned">Запланировано 📆</span> <span class="count">(1)</span></h2>
+                    <div class="roadmap-cards">
+
+                        <div class="roadmap-card">
+                            <h3>ИИ-ассистент</h3>
+                            <p>Разрабокта ии-помощника для персонализации и автоматизации ваших тренировок.</p>
+                            <div class="card-features">
+                                <span class="feature">#Новая функция ✨</span>
+                                <span class="feature">#Интеграция ⚡️</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Обсуждается -->
+                <div class="roadmap-section">
+                    <h2><span data-translate="roadmap-discussing">Обсуждается 💬</span> <span class="count">(2)</span></h2>
+                    <div class="roadmap-cards">
+
+                        <div class="roadmap-card">
+                            <h3>Создание конференций в рамках платформы</h3>
+                            <p>Разрабокта ии-помощника для персонализации и автоматизации ваших тренировок.</p>
+                            <div class="card-features">
+                                <span class="feature">#T-Sync Platform</span>
+                                <span class="feature">#Новая функция ✨</span>
+                            </div>
+                        </div>
+
+                        <div class="roadmap-card">
+                            <h3>Создание доски тренеров</h3>
+                            <p>Возможность загрузить свою анкету, и привлечь новых спортсменов в Рабочую Зону.</p>
+                            <div class="card-features">
+                                <span class="feature">#T-Sync Platform</span>
+                                <span class="feature">#Tsygram</span>
+                                <span class="feature">#Новая функция ✨</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">T-Sync.</a>
+                    <!-- <p class="footer-tagline">Платформа для тренировок и командной синхронизации.</p> -->
+                </div>
+                <div class="footer-columns">
+                    <div class="footer-col">
+                        <div class="footer-col-title" data-translate="footer-products">Продукты</div>
+                        <ul>
+                            <li><a href="/">T‑Sync Platform</a></li>
+                            <li><a href="/products/create-website/">T‑Sync Creatium</a></li>
+                            <li><a href="/products/tsygram/">Tsygram</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col-title" data-translate="footer-resources">Ресурсы</div>
+                        <ul>
+                            <li><a href="/price/" data-translate="nav-pricing">Тарифы</a></li>
+                            <li><a href="/roadmap/" data-translate="nav-roadmap">Роудмап</a></li>
+                            <li><a href="/ai/" data-translate="footer-ai-assistant">AI‑ассистент</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col-title" data-translate="footer-more">Еще</div>
+                        <ul>
+                            <!-- <li><a href="/help/" data-translate="nav-help">Справочный центр</a></li> -->
+                            <li><a href="/privacy/" data-translate="footer-privacy">Политика Конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <span data-translate="footer-copyright">© 2025 T‑Sync</span>
+                    <span class="dot-sep">•</span>
+                    <a href="/privacy/" data-translate="footer-privacy">Политика Конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Вверх" -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Прокрутить вверх">
+    </button>
+
+    <script src="../src/js/translations.js"></script>
+    <script src="../src/js/script.js"></script>
+    <script src="./roadmap.js"></script>
+
+</body>
+</html>

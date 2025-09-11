@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    {
+      "source": "/((?!404).*)",
+      "destination": "/404"
+    }
+  ],
+  "errorPages": {
+    "404": "/404"
+  }
+}
