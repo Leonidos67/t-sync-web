@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Общие стили */
 body {
     background: #111;
@@ -205,3 +206,212 @@ p {
         margin-bottom: 0.5rem;
     }
 }
+=======
+/* Общие стили */
+body {
+    background: #111;
+    margin: 0;
+    overflow-x: hidden;
+    color: #fff;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    cursor: default;
+}
+
+/* Секции */
+.section {
+    padding: 60px 20px;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-left: 0;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+    text-align: left;
+    max-width: 100%;
+    margin-left: 0;
+}
+
+/* Контент политики конфиденциальности */
+.privacy-content {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    padding: 40px;
+    margin-top: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Оглавление (вертикальная навигация) */
+.section-nav {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.section-link {
+    display: block;
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.section-link:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.privacy-content h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.privacy-content h2:first-child {
+    margin-top: 0;
+}
+
+.privacy-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #ddd;
+    margin-bottom: 1.5rem;
+}
+
+/* Отступ при прокрутке к якорям */
+.privacy-content section {
+    scroll-margin-top: 100px;
+}
+
+.privacy-content ul {
+    margin: 1rem 0 1.5rem 2rem;
+    padding: 0;
+}
+
+.privacy-content li {
+    font-size: 1.05rem;
+    color: #ccc;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        margin-top: 80px;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    .privacy-content {
+        padding: 25px;
+        margin-top: 20px;
+    }
+
+    .section-link {
+        font-size: 0.95rem;
+        padding: 10px 12px;
+    }
+    
+    .privacy-content h2 {
+        font-size: 1.5rem;
+        margin: 1.5rem 0 0.8rem 0;
+    }
+    
+    .privacy-content p {
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .privacy-content li {
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+        margin-top: 70px;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    .section {
+        padding: 40px 15px;
+    }
+    
+    .privacy-content {
+        padding: 20px;
+        margin-top: 15px;
+    }
+
+    .section-link {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+    
+    .privacy-content h2 {
+        font-size: 1.3rem;
+        margin: 1.2rem 0 0.6rem 0;
+    }
+    
+    .privacy-content p {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+    }
+    
+    .privacy-content li {
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+    }
+}
+>>>>>>> a5a19c1e6a03d755ac3c83e0bc340a75738c67c9

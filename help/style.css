@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Общие стили */
 body {
     background: #111;
@@ -936,4 +937,944 @@ p {
         padding: 6px 12px;
         font-size: 0.8rem;
     }
+=======
+/* Общие стили */
+body {
+    background: #111;
+    margin: 0;
+    overflow-x: hidden;
+    color: #fff;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    cursor: default;
+    transition: padding-right 0.3s ease;
+}
+
+/* Класс для блокировки скролла */
+body.scroll-locked {
+    overflow: hidden;
+    padding-right: 15px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+/* Дополнительная защита для мобильных устройств */
+@media (max-width: 768px) {
+    body.scroll-locked {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+/* Секции */
+.section {
+    padding: 0 20px 60px 20px;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* Хиро-блок справочного центра */
+.help-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.help-hero-text {
+    flex: 1;
+}
+
+.help-hero-image {
+    flex: 0 0 360px;
+    height: 360px;
+    /* background-image: url('../assets/help.png'); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .help-hero {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .help-hero-image {
+        flex: none;
+        width: 300px;
+        height: 300px;
+    }
+    .help-hero-text h1,
+    .help-hero-text p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .help-hero-image {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+/* Макет справочного центра: сайдбар + контент */
+.help-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 32px;
+}
+
+.help-sidebar {
+    position: sticky;
+    top: 100px;
+    align-self: start;
+    height: fit-content;
+}
+
+.help-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.nav-item {
+    margin-bottom: 4px;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.nav-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-toggle:hover {
+    opacity: 0.8;
+}
+
+.nav-toggle .toggle-icon {
+    transform: rotate(-90deg);
+    width: 12px;
+    height: 12px;
+    transition: transform 0.3s ease;
+}
+
+.nav-toggle.expanded .toggle-icon {
+    transform: rotate(0deg);
+}
+
+.nav-submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 16px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.nav-submenu.expanded {
+    height: auto;
+}
+
+.nav-submenu li {
+    margin-bottom: 2px;
+}
+
+.nav-submenu a {
+    padding: 6px 0;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.nav-submenu a:hover {
+    color: #ccc;
+}
+
+.help-nav a {
+    display: block;
+    padding: 8px 0;
+    color: #999;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+    border: none;
+    background: none;
+    border-radius: 0;
+    flex: 1;
+}
+
+.help-nav a:hover {
+    color: #fff;
+    background: none;
+    border: none;
+}
+
+.help-nav a.active {
+    color: #fff;
+    background: none;
+    border: none;
+    font-weight: 500;
+}
+
+.help-content {
+    min-width: 0;
+}
+
+/* Поиск в справочном центре */
+.help-search {
+	margin: 0 0 24px 0;
+}
+
+.help-search input[type="search"] {
+	width: 100%;
+	padding: 14px 16px;
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	background: rgba(255, 255, 255, 0.06);
+	color: #fff;
+	font-size: 1rem;
+	outline: none;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.help-search input[type="search"]::placeholder {
+	color: #aaa;
+}
+
+.help-search input[type="search"]:focus {
+	border-color: rgba(0, 204, 255, 0.5);
+	box-shadow: 0 0 0 4px rgba(0, 204, 255, 0.08);
+	background: rgba(255, 255, 255, 0.08);
+}
+
+.ref-section {
+    margin-bottom: 48px;
+}
+
+.ref-section h2 {
+    margin: 0 0 16px 0;
+}
+
+.ref-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+/* Вертикальный вывод карточек в быстром старте */
+#quick-start .ref-grid {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 1024px) {
+    #quick-start .ref-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    #quick-start .ref-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Верхнее изображение в популярном блоке */
+.quick-start-image {
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 16px;
+	margin-bottom: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	background: #0b0b0b;
+}
+
+/* Стрелка в карточках быстрого старта */
+.ref-card {
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ref-card {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding: 14px;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.ref-card:hover {
+    transform: translateY(-1px);
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Подсветка, которая следует за курсором внутри карточки */
+.ref-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(300px circle at var(--x, -100px) var(--y, -100px), rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.12) 40%, rgba(255, 255, 255, 0.06) 60%, transparent 75%);
+    filter: blur(18px);
+    mix-blend-mode: screen;
+    opacity: 0;
+    transition: opacity 0.2s ease, filter 0.2s ease;
+    pointer-events: none;
+}
+
+.ref-card:hover::before {
+    opacity: 1;
+}
+
+
+.ref-card-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    flex-shrink: 0;
+    background: radial-gradient(circle at 30% 30%, rgba(0, 255, 136, 0.25), rgba(0, 204, 255, 0.25));
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.ref-card-text h3 {
+    margin: 0 0 4px 0;
+    font-size: 1.15rem;
+    color: #fff;
+}
+
+.ref-card-text p {
+    margin: 0;
+    color: #bbb;
+    font-size: 0.95rem;
+}
+
+/* Иллюстрация под текстом карточки */
+.ref-card-illustration {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 0;
+    margin: 0;
+    border: none;
+    background: none;
+}
+
+/* Выравнивание для карточек быстрого старта */
+#quick-start .ref-card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    align-items: start;
+    padding: 0;
+    overflow: hidden;
+}
+
+#quick-start .ref-card-illustration {
+    grid-column: 1 / -1;
+    grid-row: 1;
+}
+
+#quick-start .ref-card-text {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    text-align: left;
+    padding: 0px 14px 14px 14px;
+}
+
+#quick-start .ref-card-text h3,
+#quick-start .ref-card-text p {
+    text-align: left;
+}
+
+/* Отключить подсветку и эффекты наведения у карточек быстрого старта */
+#quick-start .ref-card::before {
+    content: none !important;
+}
+
+#quick-start .ref-card:hover {
+    transform: none;
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+}
+
+@media (max-width: 1024px) {
+    .help-layout {
+        grid-template-columns: 220px 1fr;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .help-layout {
+        grid-template-columns: 1fr;
+    }
+    .help-sidebar {
+        position: static;
+        top: auto;
+    }
+    .ref-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-left: 0;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0 0 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 0 0 15px 0;
+    color: #fff;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+    text-align: left;
+    max-width: 100%;
+    margin-left: 0;
+}
+
+/* Удалены стили роудмапа на странице помощи */
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        margin-top: 80px;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    .roadmap-card {
+        min-width: 280px;
+        padding: 18px;
+    }
+    
+    .roadmap-cards {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+        margin-top: 0px;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    .section {
+        padding: 40px 15px;
+    }
+    
+    .roadmap-card {
+        min-width: 260px;
+        padding: 15px;
+    }
+    
+    .roadmap-cards {
+        gap: 12px;
+    }
+}
+
+.suggestions-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #00ff88, #00ccff);
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 255, 136, 0.3);
+}
+
+.suggestions-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 255, 136, 0.4);
+    background: linear-gradient(135deg, #00cc66, #0099cc);
+}
+
+.suggestions-button:active {
+    transform: translateY(0);
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: 0;
+}
+
+.hero-button:hover {
+    background: #ddd;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 480px) {
+    .hero-button {
+        padding: 12px 25px;
+    }
+}
+
+/* Адаптивность для блока предложений */
+@media (max-width: 768px) {
+    
+    .hero-button {
+        padding: 12px 24px;
+        font-size: 1rem;
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .hero-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        align-self: flex-start;
+    }
+}
+
+/* Стили для модального окна */
+.roadmap-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.roadmap-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    background: #000;
+    border: 1px solid #333;
+    border-radius: 0;
+    border-left: 1px solid #333;
+    overflow: hidden;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Мобильный заголовок (скрыт по умолчанию) */
+.mobile-header {
+    display: none;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.mobile-header h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    flex: 1;
+}
+
+.mobile-header .modal-close {
+    position: static;
+    width: 35px;
+    height: 35px;
+    margin-left: 15px;
+}
+
+.roadmap-modal.show .modal-content {
+    transform: translateX(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 1002;
+}
+
+.roadmap-window-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Скрываем десктопную кнопку на мобильных */
+@media (max-width: 768px) {
+    .desktop-close {
+        display: none;
+    }
+}
+
+.modal-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.modal-close img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-image {
+    width: calc(100% - 40px);
+    height: 200px;
+    overflow: hidden;
+    background: #111;
+    flex-shrink: 0;
+    margin: 20px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Подсветка под изображением */
+.modal-image::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    right: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 204, 255, 0.1));
+    border-radius: 50%;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.modal-info {
+    padding: 30px;
+    padding-top: 20px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.modal-info h2 {
+    font-size: 1.8rem;
+    margin: 0 0 20px 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.modal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.modal-tag {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #ddd;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modal-description {
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.modal-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-status {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.modal-status.completed {
+    background: rgba(0, 255, 136, 0.2);
+    color: #00ff88;
+    border: 1px solid rgba(0, 255, 136, 0.3);
+}
+
+.modal-status.in-development {
+    background: rgba(0, 204, 255, 0.2);
+    color: #00ccff;
+    border: 1px solid rgba(0, 204, 255, 0.3);
+}
+
+.modal-status.planned {
+    background: rgba(255, 193, 7, 0.2);
+    color: #ffc107;
+    border: 1px solid rgba(255, 193, 7, 0.3);
+}
+
+.modal-status.discussed {
+    background: rgba(158, 158, 158, 0.2);
+    color: #9e9e9e;
+    border: 1px solid rgba(158, 158, 158, 0.3);
+}
+
+.modal-date {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Адаптивность для модального окна */
+@media (max-width: 768px) {
+    .roadmap-modal {
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .modal-content {
+        width: 90%;
+        height: 90vh;
+        margin: 20px;
+        margin-top: 40px;
+        border-radius: 16px 16px 0 0;
+        transform: translateY(100%);
+    }
+    
+    .roadmap-modal.show .modal-content {
+        transform: translateY(0);
+    }
+    
+    /* Показываем мобильный заголовок */
+    .mobile-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    /* Скрываем обычный заголовок */
+    .modal-info h2 {
+        display: none;
+    }
+    
+    .modal-info {
+        padding: 25px 20px;
+        padding-top: 15px;
+    }
+    
+    .modal-image {
+        height: 150px;
+        width: calc(100% - 30px);
+        margin: 15px;
+        order: -1; /* Перемещаем изображение выше */
+    }
+    
+    .modal-image::after {
+        left: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .roadmap-modal {
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .modal-content {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        margin-top: 40px;
+        border-radius: 20px 20px 0 0;
+        transform: translateY(100%);
+    }
+    
+    .roadmap-modal.show .modal-content {
+        transform: translateY(0);
+    }
+    
+    /* Мобильный заголовок */
+    .mobile-header {
+        padding: 15px;
+    }
+    
+    .mobile-header h2 {
+        font-size: 1.2rem;
+    }
+    
+    .mobile-header .modal-close {
+        width: 30px;
+        height: 30px;
+    }
+    
+    /* Скрываем обычный заголовок */
+    .modal-info h2 {
+        display: none;
+    }
+    
+    .modal-info {
+        padding: 20px 15px;
+        padding-top: 10px;
+    }
+    
+    .modal-image {
+        height: 120px;
+        width: calc(100% - 20px);
+        margin: 10px;
+        order: -1; /* Перемещаем изображение выше */
+    }
+    
+    .modal-image::after {
+        left: 10px;
+        right: 10px;
+    }
+    
+    .modal-tags {
+        gap: 8px;
+    }
+    
+    .modal-tag {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+>>>>>>> a5a19c1e6a03d755ac3c83e0bc340a75738c67c9
 }
