@@ -306,17 +306,113 @@ const translations = {
         'stats-title': 'О нас в цифрах',
         'stats-uptime': 'Всегда на связи и без сбоев, всегда надежен.',
         'stats-users': 'Активных пользователей в системе.',
-        'stats-support': 'Настоящие люди/Ии-ассистент - всегда готовы помочь.'
+        'stats-support': 'Настоящие люди/Ии-ассистент - всегда готовы помочь.',
+        
+        // Partners
+        'partners-title': 'С кем работаем',
+
+        // Преимущества (benefits)
+        'benefits-title': 'Наши преимущества',
+        'benefit-access-title': 'Гибкие настройки доступа',
+        'benefit-access-desc': 'Настраивайте права доступа для ассистентов, спортсменов или вторых тренеров за 2 клика.',
+        'benefit-crossplatform-title': 'Кроссплатформенная доступность',
+        'benefit-crossplatform-desc': 'Начните на компьютере, продолжите на телефоне — все синхронизируется мгновенно.',
+        'benefit-unified-title': 'Единое пространство для тренировок',
+        'benefit-unified-desc': 'Все инструменты в одном месте: от планирования до видеоразборов.',
+        'benefit-automation-title': 'Полная автоматизация процессов',
+        'benefit-automation-desc': 'Система сама считает нагрузки, напоминает о тренировках и формирует отчеты.',
+        'benefit-integration-title': 'Интеграция с внешними сервисами',
+        'benefit-integration-desc': 'Подключение Garmin Connect, Slack и других платформ для полной автоматизации.',
+        'benefit-analytics-title': 'Детальная аналитика и отчеты',
+        'benefit-analytics-desc': 'Прогресс в виде понятных графиков, статистика нагрузок и детальные отчеты по тренировкам.',
+
+        // Network section
+        'network-center': 'вы',
+        'network-garmin-title': 'Garmin Connect',
+        'network-garmin-desc': 'Подключите свой аккаунт, <br/>и отслеживайте активность',
+        'network-slack-title': 'Slack-уведомления',
+        'network-slack-desc': 'Получайте уведомления в своем <br/>рабочем пространстве Slack',
+        'network-privacy-title': 'Персональная Конфиденциальность',
+        'network-privacy-desc': 'Управляйте безопасностью и доступом к своему аккаунту',
+        'network-roles-title': 'Ролевой доступ',
+        'network-roles-desc': 'Задавайте роли всем участникам зоны',
+        'network-export-title': 'Экспорт данных',
+        'network-export-desc': 'Переносите созданные тренировки в удобный для вас формат',
+        'network-other-title': 'Другие возможности',
+        'network-other-desc': 'Создайте свой персональный сайт и страницу в tsygram'
     },
     
     EN: {
-        // Keep EN section minimal to avoid duplication; expand as needed
+        // Keep EN section minimal to avoid duplication; expanded for index.html
         'help-breadcrumb-home': 'Home',
         'help-breadcrumb-help': 'Help Center',
         'help-center-title': 'Help Center',
         'help-center-subtitle': 'Start with the basics or explore advanced features to become a T‑Sync expert.',
         'help-popular-topics': 'OUR SERVICES',
         'nav-home': 'Home',
+        'nav-products': 'Our services',
+        'nav-pricing': 'Pricing',
+        'nav-help': 'Help Center',
+        'nav-roadmap': 'Roadmap',
+        'nav-privacy': 'Privacy',
+        'nav-login': 'Log in',
+        'nav-services': 'Our services',
+        'nav-ai': 'AI',
+        'nav-platform-title': 'T-Sync Platform',
+        'nav-platform-desc': 'Platform for training management',
+        'nav-creatium-title': 'T-Sync Creatium',
+        'nav-creatium-desc': 'Create a personal website',
+        'nav-tsygram-title': 'Tsygram',
+        'nav-tsygram-desc': 'Social network for athletes',
+
+        // Hero
+        'launch-date': 'Platform launch: 10/01/2025',
+        'hero-title-line1': 'A platform for',
+        'hero-title-line2': 'built by',
+        'hero-title-sport1': 'athletes',
+        'hero-title-sport2': 'athletes',
+        'hero-text': '🤝 Build training workflows, track analytics, and sync your team — all in one place. A B2B platform for managing training.',
+        'hero-button': 'Create beta account',
+        'scroll-hint': 'Scroll',
+        
+        // Partners
+        'partners-title': 'Who we work with',
+
+        // Stats
+        'stats-title': 'Our numbers',
+        'stats-uptime': 'Always online and reliable.',
+        'stats-users': 'Active users on the platform.',
+        'stats-support': 'Real people/AI assistant — always ready to help.',
+
+        // Benefits
+        'benefits-title': 'Our benefits',
+        'benefit-access-title': 'Flexible access control',
+        'benefit-access-desc': 'Set permissions for assistants, athletes, or co‑coaches in 2 clicks.',
+        'benefit-crossplatform-title': 'Cross‑platform availability',
+        'benefit-crossplatform-desc': 'Start on desktop, continue on mobile — instant sync.',
+        'benefit-unified-title': 'Unified training workspace',
+        'benefit-unified-desc': 'All tools in one place: from planning to video reviews.',
+        'benefit-automation-title': 'Full process automation',
+        'benefit-automation-desc': 'The system calculates loads, reminds about workouts, and creates reports.',
+        'benefit-integration-title': 'Integrations with external services',
+        'benefit-integration-desc': 'Connect Garmin Connect, Slack, and more for full automation.',
+        'benefit-analytics-title': 'Detailed analytics and reports',
+        'benefit-analytics-desc': 'Clear graphs, load statistics, and detailed training reports.',
+
+        // Network section
+        'network-center': 'you',
+        'network-garmin-title': 'Garmin Connect',
+        'network-garmin-desc': 'Connect your account <br/>and track your activity',
+        'network-slack-title': 'Slack notifications',
+        'network-slack-desc': 'Receive alerts in your <br/>Slack workspace',
+        'network-privacy-title': 'Personal privacy',
+        'network-privacy-desc': 'Control security and access to your account',
+        'network-roles-title': 'Role‑based access',
+        'network-roles-desc': 'Assign roles to all zone participants',
+        'network-export-title': 'Data export',
+        'network-export-desc': 'Export created workouts to a convenient format',
+        'network-other-title': 'Other capabilities',
+        'network-other-desc': 'Create your personal site and a page on Tsygram',
         'error-404-title': '404. Page Not Found',
         'error-404-button': 'Back to Home'
     }
