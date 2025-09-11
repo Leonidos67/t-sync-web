@@ -1,11 +1,9 @@
 {
-  "rewrites": [
+  "version": 3,
+  "routes": [
     {
-      "source": "/((?!404).*)",
-      "destination": "/404"
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
-  ],
-  "errorPages": {
-    "404": "/404"
-  }
+  ]
 }
