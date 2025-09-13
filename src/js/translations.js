@@ -269,6 +269,23 @@ const translations = {
         'roadmap-trainers-board-desc': 'Возможность загрузить свою анкету, и привлечь новых спортсменов в Рабочую Зону.',
         'roadmap-trainers-board-full': 'Платформа для тренеров с возможностью создания профилей, демонстрации достижений и привлечения клиентов. Система отзывов и рейтингов.',
         
+        // Roadmap tags
+        'tag-tsync-platform': '#T-Sync Platform',
+        'tag-new-feature': '#Новая функция ✨',
+        'tag-improvement': '#Улучшение 👍',
+        'tag-extension': '#Расширение 🔥',
+        'tag-design': '#Дизайн 🎨',
+        'tag-integration': '#Интеграция ⚡️',
+        'tag-final-result': '#Конечный результат 🤝',
+        'tag-tsygram': '#Tsygram',
+        'tag-tsync-creatium': '#T-Sync Creatium',
+        
+        // Roadmap section headers
+        'roadmap-done': 'Сделано',
+        'roadmap-in-progress': 'В разработке',
+        'roadmap-planned': 'Запланировано',
+        'roadmap-discussing': 'Обсуждается',
+        
         // Навигация
         'nav-home': 'Главная',
         'nav-products': 'Наши сервисы',
@@ -536,6 +553,84 @@ const translations = {
         'pricing-feature-support': 'Support',
         'pricing-support-limited': '9am - 6pm',
         'pricing-support-24-7': '24/7',
+
+        // Roadmap tags
+        'tag-tsync-platform': '#T-Sync Platform',
+        'tag-new-feature': '#New Feature ✨',
+        'tag-improvement': '#Improvement 👍',
+        'tag-extension': '#Extension 🔥',
+        'tag-design': '#Design 🎨',
+        'tag-integration': '#Integration ⚡️',
+        'tag-final-result': '#Final Result 🤝',
+        'tag-tsygram': '#Tsygram',
+        'tag-tsync-creatium': '#T-Sync Creatium',
+
+        // Roadmap section headers
+        'roadmap-done': 'Done',
+        'roadmap-in-progress': 'In Progress',
+        'roadmap-planned': 'Planned',
+        'roadmap-discussing': 'Under Discussion',
+
+        // Roadmap items (titles, short desc, full)
+        'roadmap-analytics-view-title': 'Training Analytics and Reports View',
+        'roadmap-analytics-view-desc': 'Ability to view training analytics.',
+        'roadmap-analytics-view-full': 'Full training analytics system with detailed reports, progress charts and statistics. Includes load analysis, recovery, training effectiveness and personal recommendations.',
+
+        'roadmap-drag-windows-title': 'Drag Windows Added',
+        'roadmap-drag-windows-desc': 'Added ability to drag modal windows to automate your platform interaction.',
+        'roadmap-drag-windows-full': 'Innovative drag-and-drop system for modal windows, allowing users to customize the interface to their needs. Improves usability and work productivity.',
+
+        'roadmap-add-members-title': 'Ability to Add Members',
+        'roadmap-add-members-desc': 'Added ability to invite other users to the workspace.',
+        'roadmap-add-members-full': 'Team management system with the ability to invite members, assign roles and control access. Perfect for coaches and sports teams.',
+
+        'roadmap-platform-created-title': 'Platform Created',
+        'roadmap-platform-created-desc': 'Fully functional platform.',
+        'roadmap-platform-created-full': 'Main T-Sync platform with full set of training management features, including planning, progress tracking and analytics.',
+
+        'roadmap-platform-design-title': 'Platform Design',
+        'roadmap-platform-design-desc': 'Establishment of the final platform design. Next step - functionality development.',
+        'roadmap-platform-design-full': 'Modern and intuitive platform design created with UX/UI best practices in mind. Responsive interface for all devices.',
+
+        'roadmap-resource-website-title': 'Resource Website',
+        'roadmap-resource-website-desc': 'Information resource website. Latest news and updates.',
+        'roadmap-resource-website-full': 'Information portal with current news, documentation and resources for T-Sync users. Regular updates and support.',
+
+        'roadmap-garmin-integration-title': 'Garmin Connect Integration',
+        'roadmap-garmin-integration-desc': 'Ability to connect Garmin account with workout export.',
+        'roadmap-garmin-integration-full': 'Direct integration with Garmin Connect for automatic synchronization of workouts, heart rate data, GPS tracks and other metrics with Garmin devices.',
+
+        'roadmap-website-templates-title': 'Website Template Selection',
+        'roadmap-website-templates-desc': 'Ability to select a template for the website.',
+        'roadmap-website-templates-full': 'Library of professional templates for creating personal websites. Various styles and themes for different sports and personal preferences.',
+
+        'roadmap-creatium-service-title': 'T-Sync Creatium Service Creation',
+        'roadmap-creatium-service-desc': 'Ability to create websites about yourself.',
+        'roadmap-creatium-service-full': "Service for creating personal sports websites with the ability to customize design, add content and integrate with social networks. <a class='roadmap-window-link' href='/products/create-website/'>Visit page</a>",
+
+        'roadmap-tsygram-service-title': 'Tsygram Service Creation',
+        'roadmap-tsygram-service-desc': 'Social network for athletes and coaches.',
+        'roadmap-tsygram-service-full': 'Social platform for athletes, coaches and sports enthusiasts. Experience sharing, finding like-minded people and creating a sports community.',
+
+        'roadmap-ai-assistant-title': 'AI Assistant',
+        'roadmap-ai-assistant-desc': 'Development of AI assistant for personalization and automation of your workouts.',
+        'roadmap-ai-assistant-full': 'Artificial intelligence for workout personalization, data analysis and automatic workout program creation based on user goals and capabilities.',
+
+        'roadmap-conferences-title': 'Creating Conferences Within the Platform',
+        'roadmap-conferences-desc': 'Development of AI assistant for personalization and automation of your workouts.',
+        'roadmap-conferences-full': 'Built-in system for conducting online conferences, webinars and master classes. Perfect for coaches and sports organizations.',
+
+        'roadmap-trainers-board-title': 'Creating Trainers Board',
+        'roadmap-trainers-board-desc': 'Ability to upload your profile and attract new athletes to the Workspace.',
+        'roadmap-trainers-board-full': 'Platform for trainers with the ability to create profiles, showcase achievements and attract clients. Review and rating system.',
+
+        // Roadmap common
+        'roadmap-breadcrumb-title': 'Roadmap',
+        'roadmap-title': 'Roadmap',
+        'roadmap-intro': 'Our plans and progress on new features.',
+        'roadmap-suggestions-title': 'Have suggestions?',
+        'roadmap-suggestions-desc': 'Your ideas help make our service even better 🙌',
+        'roadmap-suggestions-cta': 'Suggest an idea',
 
         // Create Website (Creatium) page
         'cw-page-title': 'T‑Sync. | Create Website',
