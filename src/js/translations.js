@@ -179,9 +179,16 @@ const translations = {
         'privacy-sec7-li4': 'Отозвать согласие на обработку',
         'privacy-sec8-title': '8. Изменения в Политике Конфиденциальности',
         'privacy-sec8-p1': 'Мы можем время от времени пересматривать эту Политику конфиденциальности по нашему собственному усмотрению. Если в этой Политике конфиденциальности произойдут какие-либо существенные изменения, мы уведомим вас об этом в соответствии с требованиями действующего законодательства. Вы понимаете и соглашаетесь с тем, что будет считаться, что вы приняли обновленную Политику конфиденциальности, если вы продолжите пользоваться Услугами после вступления в силу новой Политики конфиденциальности.',
-        'privacy-contacts-site': '🌐 Сайт: <a href="http://t-sync.ru" target="_blank" rel="noopener noreferrer">t-sync.ru</a>',
+        'privacy-contacts-site': '🌐 Сайт: <a href="http://t-sync-web.vercel.app" target="_blank" rel="noopener noreferrer">t-sync-web.vercel.app</a>',
         'privacy-contacts-phone': '📱 Телефон: <a href="tel:+79646150520">+7 964 615 05 20</a>',
         'privacy-contacts-inn': 'ИНН 672908781554',
+
+        // ai
+        'ai-page-title': 'T-Sync | AI Assistant',
+        'ai-header-subtitle': 'Чем я могу помочь вам сегодня?',
+        'ai-suggest-nav': 'Покажи навигацию сайта',
+        'ai-suggest-products': 'Расскажи о продуктах',
+        'ai-input-placeholder': 'Введите ваш вопрос здесь...',
 
         // Roadmap statuses
         'status-completed': 'Завершено',
@@ -427,6 +434,13 @@ const translations = {
         'hero-button': 'Create beta account',
         'scroll-hint': 'Scroll',
 
+        // ai
+        'ai-page-title': 'T-Sync | AI Assistant',
+        'ai-header-subtitle': 'How can I help you today?',
+        'ai-suggest-nav': 'Show the site navigation',
+        'ai-suggest-products': 'Tell us about the products',
+        'ai-input-placeholder': 'Enter your question here...',
+
         // Partners
         'partners-title': 'Who we work with',
 
@@ -472,7 +486,6 @@ const translations = {
         'footer-resources': 'Resources',
         'footer-more': 'More',
         'footer-privacy': 'Privacy Policy',
-        'footer-copyright': '© 2025 T‑Sync',
         'footer-ai-assistant': 'AI assistant',
         'footer-tariffs': 'Pricing',
         'footer-roadmap': 'Roadmap',
@@ -487,7 +500,7 @@ const translations = {
         'pricing-plans-title': 'Pricing plans',
         'pricing-plans-subtitle': 'Choose the right plan for you or your team.',
         'pricing-basic-title': 'Basic plan',
-        'pricing-basic-price': '0 ₽',
+        'pricing-basic-price': 'Free',
         'pricing-basic-subtitle': 'For personal use',
         'pricing-basic-feature1': 'Unlimited rooms and workouts',
         'pricing-basic-feature2': 'Storage limit: 1 GB',
@@ -594,5 +607,103 @@ function initializeLanguage() {
         currentLang.textContent = savedLang;
     }
 }
+
+// Функция для получения перевода
+
+function getTranslation(key, lang = 'RU') {
+
+    return translations[lang]?.[key] || key;
+
+}
+
+// Функция для обновления всех текстов на странице
+
+function updatePageLanguage(lang) {
+
+    const elements = document.querySelectorAll('[data-translate]');
+
+    elements.forEach(element => {
+
+        const key = element.getAttribute('data-translate');
+
+        const translation = getTranslation(key, lang);
+
+        const useHtml = element.hasAttribute('data-translate-html');
+
+        if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+
+            element.placeholder = translation;
+
+        } else if (useHtml) {
+
+            element.innerHTML = translation;
+
+        } else {
+
+            element.textContent = translation;
+
+        }
+
+    });
+
+    // Обновляем title страницы
+
+    const titleElement = document.querySelector('title');
+
+    if (titleElement && titleElement.getAttribute('data-translate')) {
+
+        const titleKey = titleElement.getAttribute('data-translate');
+
+        titleElement.textContent = getTranslation(titleKey, lang);
+
+    }
+
+    // Сохраняем выбранный язык в localStorage
+
+    localStorage.setItem('selectedLanguage', lang);
+
+}
+
+
+
+// Функция для инициализации языка при загрузке страницы
+
+function initializeLanguage() {
+
+    const savedLang = localStorage.getItem('selectedLanguage') || 'RU';
+
+    updatePageLanguage(savedLang);
+
+    // Обновляем активную кнопку языка
+
+    const langButtons = document.querySelectorAll('.lang-btn');
+
+    langButtons.forEach(btn => {
+
+        btn.classList.remove('active');
+
+        if (btn.getAttribute('data-lang') === savedLang) {
+
+            btn.classList.add('active');
+
+        }
+
+    });
+
+    // Обновляем отображаемый язык
+
+    const currentLang = document.getElementById('current-lang');
+
+    if (currentLang) {
+
+        currentLang.textContent = savedLang;
+
+    }
+
+}
+
+
+
+
 
 
